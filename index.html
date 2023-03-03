@@ -1,377 +1,446 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-		<!-- Адаптирование страницы для мобильных устройств -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-		<!-- Запрет распознования номера телефона -->
-		<meta name="format-detection" content="telephone=no">
-		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	<!-- Адаптирование страницы для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Заголовок страницы -->
-		<title>GoldVentPro</title>
+	<!-- Запрет распознования номера телефона -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-		<!-- Подключение шрифтов -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@500;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-		
-		<!-- Данное значение часто используют(использовали) поисковые системы -->
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+	<!-- Заголовок страницы -->
+	<title>GoldVentPro</title>
 
-		<!-- Изменение цвета панели моб. браузера -->
-		<meta name="msapplication-TileColor" content="#DE041D">
-		<meta name="theme-color" content="#DE041D">
+	<!-- Подключение шрифтов -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@500;900&family=Ubuntu:wght@400;700&display=swap"
+		rel="stylesheet">
 
-		
-		<!-- Подключение файлов стилей -->
-		<link rel="stylesheet" href="css/fancybox.css">
-		<link rel="stylesheet" href="css/nice-select.css">
-		<link rel="stylesheet" href="css/styles.css">
+	<!-- Данное значение часто используют(использовали) поисковые системы -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 
-		<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
-		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
-		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
-		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
-		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
-	</head>
+	<!-- Изменение цвета панели моб. браузера -->
+	<meta name="msapplication-TileColor" content="#DE041D">
+	<meta name="theme-color" content="#DE041D">
 
-	<body>
-		<div class="wrap">
-			<div class="main">
-				<header>	
-					<div class="cont">
-						<a href="index.html" class="header_logo">
-							<img src="images/logo.png" alt="">
-						</a>
-						<nav class="menu">							
-							<div class="cont">
-								<div class="item">
-									<a href="#practics">О компании</a>
-								</div>
-								<div class="item">
-									<a href="#partners">Объекты</a>
-								</div>
-								<div class="item">
-									<a href="#cases">Oтзывы</a>
-								</div>
-								<div class="item">
-									<a href="#price">лицензии</a>
-								</div>	
-								<div class="item">
-									<a href="#news">частые вопросы</a>
-								</div>														
-							</div>						
-						</nav>
-						<div class="header_contacts">
-							<a href="tel:74954443322" class="header_contacts-phone">+7 (495) 444-33-22</a>
-							<div class="header_contacts-bottom">
-								<div class="header_contacts-soc">
-									<a href="https://t.me/" target="_blank"><img src="images/telegram.svg" alt=""></a>
-									<a href=":https://wa.me/74954443322" target="_blank"><img src="images/what.svg" alt=""></a>
-								</div>
-								<button class="modal_link btn_callback" data-content="#modal_callback">
-									<span>Заказать звонок</span>								
-								</button>
+
+	<!-- Подключение файлов стилей -->
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
+	<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
+	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="main">
+			<header>
+				<div class="cont">
+					<a href="index.html" class="header_logo">
+						<img src="images/logo.png" alt="">
+					</a>
+					<nav class="menu">
+						<div class="cont">
+							<div class="item">
+								<a href="#practics">О компании</a>
+							</div>
+							<div class="item">
+								<a href="#partners">Объекты</a>
+							</div>
+							<div class="item">
+								<a href="#cases">Oтзывы</a>
+							</div>
+							<div class="item">
+								<a href="#price">лицензии</a>
+							</div>
+							<div class="item">
+								<a href="#news">частые вопросы</a>
 							</div>
 						</div>
-
-						<button class="mob_menu_btn">
-							<img src="images/ic_mob_menu.svg" alt="">
-						</button>
-						<button class="close_btn">
-							<img src="images/ic_close_menu.svg" alt="">
-						</button>
+					</nav>
+					<div class="header_contacts">
+						<a href="tel:74954443322" class="header_contacts-phone">+7 (495) 444-33-22</a>
+						<div class="header_contacts-bottom">
+							<div class="header_contacts-soc">
+								<a href="https://t.me/" target="_blank"><img src="images/telegram.svg" alt=""></a>
+								<a href=":https://wa.me/74954443322" target="_blank"><img src="images/what.svg"
+										alt=""></a>
+							</div>
+							<button class="modal_link btn_callback" data-content="#modal_callback">
+								<span>Заказать звонок</span>
+							</button>
+						</div>
 					</div>
-				</header>
+
+					<button class="mob_menu_btn">
+						<img src="images/ic_mob_menu.svg" alt="">
+					</button>
+					<button class="close_btn">
+						<img src="images/ic_close_menu.svg" alt="">
+					</button>
+				</div>
+			</header>
 
 
-				
 
 
-				<div class="benefits">
-					<div class="cont">
-						<div class="benefits_items">
-							<div class="benefits_item">
-								<div class="benefits_item-icon">
-									<img src="images/benefits1.svg" alt="">
-								</div>
-								<div class="benefits_item-title">Квалифицированные<br> специалисты</div>
-								<div class="benefits_item-text">Составим грамотное техническое задание в короткие сроки</div>
+
+			<div class="benefits">
+				<div class="cont">
+					<div class="benefits_items">
+						<div class="benefits_item">
+							<div class="benefits_item-icon">
+								<img src="images/benefits1.svg" alt="">
 							</div>
-							<div class="benefits_item">
-								<div class="benefits_item-icon">
-									<img src="images/benefits2.svg" alt="">
-								</div>
-								<div class="benefits_item-title">Многолетний <br>опыт</div>
-								<div class="benefits_item-text">Благодаря большому опыту все работы выполняются быстро и качественно</div>
+							<div class="benefits_item-title">Квалифицированные<br> специалисты</div>
+							<div class="benefits_item-text">Составим грамотное техническое задание в короткие сроки
 							</div>
-							<div class="benefits_item">
-								<div class="benefits_item-icon">
-									<img src="images/benefits3.svg" alt="">
-								</div>
-								<div class="benefits_item-title">Гарантия на все<br>работы</div>
-								<div class="benefits_item-text">Проектирование и монтаж систем вентиляции с гарантией 3 года!</div>
+						</div>
+						<div class="benefits_item">
+							<div class="benefits_item-icon">
+								<img src="images/benefits2.svg" alt="">
 							</div>
-							<div class="benefits_item">
-								<div class="benefits_item-icon">
-									<img src="images/benefits4.svg" alt="">
-								</div>
-								<div class="benefits_item-title">Грамотные <br>проектировщики</div>
-								<div class="benefits_item-text">Технически грамотно составляем проекты по вентиляции под ключ</div>
+							<div class="benefits_item-title">Многолетний <br>опыт</div>
+							<div class="benefits_item-text">Благодаря большому опыту все работы выполняются быстро и
+								качественно</div>
+						</div>
+						<div class="benefits_item">
+							<div class="benefits_item-icon">
+								<img src="images/benefits3.svg" alt="">
 							</div>
+							<div class="benefits_item-title">Гарантия на все<br>работы</div>
+							<div class="benefits_item-text">Проектирование и монтаж систем вентиляции с гарантией 3
+								года!</div>
+						</div>
+						<div class="benefits_item">
+							<div class="benefits_item-icon">
+								<img src="images/benefits4.svg" alt="">
+							</div>
+							<div class="benefits_item-title">Грамотные <br>проектировщики</div>
+							<div class="benefits_item-text">Технически грамотно составляем проекты по вентиляции под
+								ключ</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
 
 
-				<section class="object">
-					<div class="cont">
-						<div class="object_title title">Объекты</div>
-						<div class="object_items">
-							<div class="object_item">
-								<div class="object_item-img">
-									<img src="images/object1.jpg" alt="">
-								</div>
-								<div class="object_item-title">Салон красоты “Виктория”</div>
-								<div class="object_item-text">Повседневная практика показывает, что экономическая повестка сегодняшнего дня влечет за собой процесс внедрения и модернизации новых принципов формирования материально-технической и кадровой базы.</div>
-								<a href="#" class="object_item-link">
-									<span>Узнать подробнее</span>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#arrow"></use>
-									</svg>
-								</a>
+			<section class="object">
+				<div class="cont">
+					<div class="object_title title">Объекты</div>
+					<div class="object_items">
+						<div class="object_item">
+							<div class="object_item-img">
+								<img src="images/object1.jpg" alt="">
 							</div>
-							<div class="object_item">
-								<div class="object_item-img">
-									<img src="images/object2.jpg" alt="">
-								</div>
-								<div class="object_item-title">Столовая “Съем слона”</div>
-								<div class="object_item-text">Таким образом, высокое качество позиционных исследований позволяет оценить значение экономической целесообразности принимаемых решений.</div>
-								<a href="#" class="object_item-link">
-									<span>Узнать подробнее</span>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#arrow"></use>
-									</svg>
-								</a>
-							</div>
-							<div class="object_item">
-								<div class="object_item-img">
-									<img src="images/object3.jpg" alt="">
-								</div>
-								<div class="object_item-title">Фитнес клуб “Олимп”</div>
-								<div class="object_item-text">Ясность нашей позиции очевидна: начало повседневной работы по формированию позиции предопределяет высокую востребованность поставленных обществом задач.</div>
-								<a href="#" class="object_item-link">
-									<span>Узнать подробнее</span>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#arrow"></use>
-									</svg>
-								</a>
-							</div>
-							<div class="object_item">
-								<div class="object_item-img">
-									<img src="images/object4.jpg" alt="">
-								</div>
-								<div class="object_item-title">Коттедж 120 м2</div>
-								<div class="object_item-text">Следует отметить, что консультация с широким активом однозначно фиксирует необходимость кластеризации усилий.</div>
-								<a href="#" class="object_item-link">
-									<span>Узнать подробнее</span>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#arrow"></use>
-									</svg>
-								</a>
-							</div>
-							<div class="object_item">
-								<div class="object_item-img">
-									<img src="images/object5.jpg" alt="">
-								</div>
-								<div class="object_item-title">Пекарня</div>
-								<div class="object_item-text">Как принято считать, сторонники тоталитаризма в науке неоднозначны и будут функционально разнесены на независимые элементы.</div>
-								<a href="#" class="object_item-link">
-									<span>Узнать подробнее</span>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#arrow"></use>
-									</svg>
-								</a>
-							</div>
-							<div class="object_item">
-								<div class="object_item-img">
-									<img src="images/object6.jpg" alt="">
-								</div>
-								<div class="object_item-title">Частный дом 260 м2</div>
-								<div class="object_item-text">Предварительные выводы неутешительны: новая модель организационной деятельности выявляет срочную потребность приоретизации разума над эмоциями!</div>
-								<a href="#" class="object_item-link">
-									<span>Узнать подробнее</span>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#arrow"></use>
-									</svg>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-
-				<section class="about">
-					<div class="cont">
-						<div class="about_info">
-							<div class="about_title title">О нас</div>
-							<div class="about_text">
-								<p>Мы работаем с 2009 года, имеем большой опыт в сфере вентиляции и кондиционирования. Выполняем работы любой сложности, на нашем счету более 500 крупнейших реализованных проектов и довольных клиентов. Не смотря на то, что вентиляция и кондиционирование закладывается на этапе проектирования дома либо дизайн-проекта квартиры, офиса, бассейна и т.д.</p>
-								<p>Мы находим индивидуальное решение без ущерба  в уже используемом помещении с готовым ремонтом. А также мы работаем в команде с дизайнерами, инженерами, архитекторами и учитываем условия каждого и выполняем в оговоренные сроки, качественно, под ключ с гарантией и последующим обслуживанием.</p>
-							</div>
-							<a href="#" class="about_link">
+							<div class="object_item-title">Салон красоты “Виктория”</div>
+							<div class="object_item-text">Повседневная практика показывает, что экономическая повестка
+								сегодняшнего дня влечет за собой процесс внедрения и модернизации новых принципов
+								формирования материально-технической и кадровой базы.</div>
+							<a href="#" class="object_item-link">
+								<span>Узнать подробнее</span>
 								<svg class="icon">
-									<use xlink:href="images/sprite.svg#whats"></use>
+									<use xlink:href="images/sprite.svg#arrow"></use>
 								</svg>
-								<span>Написать в WhatsApp</span>
 							</a>
 						</div>
-						<div class="about_img">
-							<img src="images/about_img.png" alt="">
+						<div class="object_item">
+							<div class="object_item-img">
+								<img src="images/object2.jpg" alt="">
+							</div>
+							<div class="object_item-title">Столовая “Съем слона”</div>
+							<div class="object_item-text">Таким образом, высокое качество позиционных исследований
+								позволяет оценить значение экономической целесообразности принимаемых решений.</div>
+							<a href="#" class="object_item-link">
+								<span>Узнать подробнее</span>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object_item">
+							<div class="object_item-img">
+								<img src="images/object3.jpg" alt="">
+							</div>
+							<div class="object_item-title">Фитнес клуб “Олимп”</div>
+							<div class="object_item-text">Ясность нашей позиции очевидна: начало повседневной работы по
+								формированию позиции предопределяет высокую востребованность поставленных обществом
+								задач.</div>
+							<a href="#" class="object_item-link">
+								<span>Узнать подробнее</span>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object_item">
+							<div class="object_item-img">
+								<img src="images/object4.jpg" alt="">
+							</div>
+							<div class="object_item-title">Коттедж 120 м2</div>
+							<div class="object_item-text">Следует отметить, что консультация с широким активом
+								однозначно фиксирует необходимость кластеризации усилий.</div>
+							<a href="#" class="object_item-link">
+								<span>Узнать подробнее</span>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object_item">
+							<div class="object_item-img">
+								<img src="images/object5.jpg" alt="">
+							</div>
+							<div class="object_item-title">Пекарня</div>
+							<div class="object_item-text">Как принято считать, сторонники тоталитаризма в науке
+								неоднозначны и будут функционально разнесены на независимые элементы.</div>
+							<a href="#" class="object_item-link">
+								<span>Узнать подробнее</span>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object_item">
+							<div class="object_item-img">
+								<img src="images/object6.jpg" alt="">
+							</div>
+							<div class="object_item-title">Частный дом 260 м2</div>
+							<div class="object_item-text">Предварительные выводы неутешительны: новая модель
+								организационной деятельности выявляет срочную потребность приоретизации разума над
+								эмоциями!</div>
+							<a href="#" class="object_item-link">
+								<span>Узнать подробнее</span>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
 						</div>
 					</div>
-				</section>
-
-
-
-				<section class="faq accordion">
-					<div class="cont">					
-						<div class="accordion_title title">Ответы на часто задаваемые вопросы</div>
-						<div class="accordion_item active">
-							<div class="accordion_item-head">
-								<div class="accordion_item-title">Зачем нужна вентиляция?</div>
-								<svg class="accordion_item-icon">
-									<use xlink:href="images/sprite.svg#faq_arrow"></use>
-								</svg>
-							</div>
-							<div class="accordion_item-data" style="display: block;">
-								<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
-							</div>
-						</div>
-						<div class="accordion_item">
-							<div class="accordion_item-head">
-								<div class="accordion_item-title">Где лучше разместить оборудование?</div>
-								<svg class="accordion_item-icon">
-									<use xlink:href="images/sprite.svg#faq_arrow"></use>
-								</svg>
-							</div>
-							<div class="accordion_item-data">
-								<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
-							</div>
-						</div>
-						<div class="accordion_item">
-							<div class="accordion_item-head">
-								<div class="accordion_item-title">С каким интервалом нужно проводить ТО?</div>
-								<svg class="accordion_item-icon">
-									<use xlink:href="images/sprite.svg#faq_arrow"></use>
-								</svg>
-							</div>
-							<div class="accordion_item-data">
-								<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
-							</div>
-						</div>
-						<div class="accordion_item">
-							<div class="accordion_item-head">
-								<div class="accordion_item-title">От чего зависит ценообразование?</div>
-								<svg class="accordion_item-icon">
-									<use xlink:href="images/sprite.svg#faq_arrow"></use>
-								</svg>
-							</div>
-							<div class="accordion_item-data">
-								<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
-							</div>
-						</div>
-						<div class="accordion_item">
-							<div class="accordion_item-head">
-								<div class="accordion_item-title">Является ли вентиляция спасением от вредоносных микроорганизмов, вирусов и аллергенов?</div>
-								<svg class="accordion_item-icon">
-									<use xlink:href="images/sprite.svg#faq_arrow"></use>
-								</svg>
-							</div>
-							<div class="accordion_item-data">
-								<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			
-
-			</div>
-
-
-			<footer>
-				
-			</footer>
-
-
-
-			<div class="overlay"></div>
-		</div>
-
-
-		<div class="supports_error">
-			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
-		</div>
-
-
-
-		<section class="modal_consult" id="modal_callback">	
-			<div class="modal_consult-title title">Заполните форму ниже и получите первичную бесплатную юридическую консультацию</div>
-			<div class="modal_consult-info">
-				<div class="modal_consult-wrap">
-					<ul>
-						<li>Анализ текущей ситуации</li>
-						<li>Варианты решения вашего дела</li>
-						<li>Прогноз результатов</li>
-						<li>Расчет стоимости услуг юриста</li>
-					</ul>
-					<div class="modal_consult-img-mob">
-						<img src="images/modal_img.jpg" alt="">
-					</div>	
-					<form>
-						<div class="line">
-							<div class="field">
-								<input type="text" placeholder="Ваше имя">
-							</div>
-						</div>
-						<div class="line">
-							<div class="field">
-								<input type="tel" id="phone2">
-							</div>
-						</div>
-						<button class="btn btn-primary btn-blick" type="submit">	
-							<i class="btn-blick-anim1"></i>
-							<i class="btn-blick-anim2"></i>								
-							<span>Получить консультацию</span>
-						</button>
-					</form>		
 				</div>
-				<div class="modal_consult-img">
+			</section>
+
+
+
+			<section class="about">
+				<div class="cont">
+					<div class="about_info">
+						<div class="about_title title">О нас</div>
+						<div class="about_text">
+							<p>Мы работаем с 2009 года, имеем большой опыт в сфере вентиляции и кондиционирования.
+								Выполняем работы любой сложности, на нашем счету более 500 крупнейших реализованных
+								проектов и довольных клиентов. Не смотря на то, что вентиляция и кондиционирование
+								закладывается на этапе проектирования дома либо дизайн-проекта квартиры, офиса, бассейна
+								и т.д.</p>
+							<p>Мы находим индивидуальное решение без ущерба в уже используемом помещении с готовым
+								ремонтом. А также мы работаем в команде с дизайнерами, инженерами, архитекторами и
+								учитываем условия каждого и выполняем в оговоренные сроки, качественно, под ключ с
+								гарантией и последующим обслуживанием.</p>
+						</div>
+						<a href="#" class="about_link">
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#whats"></use>
+							</svg>
+							<span>Написать в WhatsApp</span>
+						</a>
+					</div>
+					<div class="about_img">
+						<img src="images/about_img.png" alt="">
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="license">
+				<div class="cont">
+					<div class="license_title title">Лицензии и благодарственные письма</div>
+					<div class="license_text">Сложно сказать, почему независимые государства призывают нас к новым
+						свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Также как
+						высокотехнологичная концепция общественного уклада, в своём классическом представлении,
+						допускает внедрение направлений прогрессивного развития.</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">Slide 1</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+							<div class="swiper-slide">Slide 1</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="faq accordion">
+				<div class="cont">
+					<div class="accordion_title title">Ответы на часто задаваемые вопросы</div>
+					<div class="accordion_item active">
+						<div class="accordion_item-head">
+							<div class="accordion_item-title">Зачем нужна вентиляция?</div>
+							<svg class="accordion_item-icon">
+								<use xlink:href="images/sprite.svg#faq_arrow"></use>
+							</svg>
+						</div>
+						<div class="accordion_item-data" style="display: block;">
+							<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный
+								баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с
+								достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие
+								процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
+						</div>
+					</div>
+					<div class="accordion_item">
+						<div class="accordion_item-head">
+							<div class="accordion_item-title">Где лучше разместить оборудование?</div>
+							<svg class="accordion_item-icon">
+								<use xlink:href="images/sprite.svg#faq_arrow"></use>
+							</svg>
+						</div>
+						<div class="accordion_item-data">
+							<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный
+								баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с
+								достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие
+								процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
+						</div>
+					</div>
+					<div class="accordion_item">
+						<div class="accordion_item-head">
+							<div class="accordion_item-title">С каким интервалом нужно проводить ТО?</div>
+							<svg class="accordion_item-icon">
+								<use xlink:href="images/sprite.svg#faq_arrow"></use>
+							</svg>
+						</div>
+						<div class="accordion_item-data">
+							<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный
+								баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с
+								достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие
+								процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
+						</div>
+					</div>
+					<div class="accordion_item">
+						<div class="accordion_item-head">
+							<div class="accordion_item-title">От чего зависит ценообразование?</div>
+							<svg class="accordion_item-icon">
+								<use xlink:href="images/sprite.svg#faq_arrow"></use>
+							</svg>
+						</div>
+						<div class="accordion_item-data">
+							<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный
+								баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с
+								достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие
+								процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
+						</div>
+					</div>
+					<div class="accordion_item">
+						<div class="accordion_item-head">
+							<div class="accordion_item-title">Является ли вентиляция спасением от вредоносных
+								микроорганизмов, вирусов и аллергенов?</div>
+							<svg class="accordion_item-icon">
+								<use xlink:href="images/sprite.svg#faq_arrow"></use>
+							</svg>
+						</div>
+						<div class="accordion_item-data">
+							<p>Вентиляция обеспечивает воздухообмен, поддерживает оптимальный температурно-влажностный
+								баланс и создает комфортный микроклимат в помещении. То есть – мы дышим воздухом с
+								достаточным содержанием кислорода, стены не сыреют, характерные запахи, сопровождающие
+								процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+		</div>
+
+
+		<footer>
+
+		</footer>
+
+
+
+		<div class="overlay"></div>
+	</div>
+
+
+	<div class="supports_error">
+		Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+	</div>
+
+
+
+	<section class="modal_consult" id="modal_callback">
+		<div class="modal_consult-title title">Заполните форму ниже и получите первичную бесплатную юридическую
+			консультацию</div>
+		<div class="modal_consult-info">
+			<div class="modal_consult-wrap">
+				<ul>
+					<li>Анализ текущей ситуации</li>
+					<li>Варианты решения вашего дела</li>
+					<li>Прогноз результатов</li>
+					<li>Расчет стоимости услуг юриста</li>
+				</ul>
+				<div class="modal_consult-img-mob">
 					<img src="images/modal_img.jpg" alt="">
-				</div>							
+				</div>
+				<form>
+					<div class="line">
+						<div class="field">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+					</div>
+					<div class="line">
+						<div class="field">
+							<input type="tel" id="phone2">
+						</div>
+					</div>
+					<button class="btn btn-primary btn-blick" type="submit">
+						<i class="btn-blick-anim1"></i>
+						<i class="btn-blick-anim2"></i>
+						<span>Получить консультацию</span>
+					</button>
+				</form>
 			</div>
-		</section>
-		
+			<div class="modal_consult-img">
+				<img src="images/modal_img.jpg" alt="">
+			</div>
+		</div>
+	</section>
 
 
 
 
-		<!-- Подключение javascript файлов -->
-		<script src="js/jquery-3.5.0.min.js"></script>
-		<script src="js/fancybox.min.js"></script>
-		<script src="js/lozad.min.js"></script>
-		<script src="js/inputmask.min.js"></script>
-		<script src="js/nice-select.js"></script>
-		<script src="js/functions.js"></script>
-		<script src="js/scripts.js"></script>
 
-	
-	</body>
+	<!-- Подключение javascript файлов -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/lozad.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="js/nice-select.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+
+
+</body>
+
 </html>
