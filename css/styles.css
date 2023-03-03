@@ -577,6 +577,66 @@ header .cont {
 
 
 
+.license {
+}
+.cont {
+}
+.license_title {
+}
+.title {
+}
+.license_text {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.license_item {
+    position: relative;
+}
+
+.license_item-bg::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: url(../images/view.svg);
+}
+.license_item-bg {
+    background: #F3CD67;
+    opacity: 0;
+    box-shadow: 0px 12px 30px -6px rgba(0, 0, 0, 0.1);
+    /* border-radius: 2px; */
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    /* width: 100%;
+    height: auto; */
+    /* display: none; */
+}
+.license_item-bg {
+}
+.license_item:hover .license_item-bg {
+    /* display: block; */
+    opacity: 0.8;
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+
+
+
+
 .accordion {
     padding: 140px 0;
     background-position: center;
