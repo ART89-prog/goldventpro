@@ -1,0 +1,442 @@
+@media (max-width: 479px) {
+
+    :root {
+        --font_size: 14px;
+        --font_size_title: 19px;
+    }
+    .first-section {
+        margin-top: 2px;
+        padding-bottom: 21px;
+    } 
+    .footer_callback,
+    .footer_menu li a,
+    .footer_contact,
+    .footer_politic,
+    .footer_contract {
+        font-size: 12px;
+    }
+    .footer_callback {
+        margin: 0;
+    }
+    footer .link a {
+        max-width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+    .footer_callback {
+        line-height: 1.2;
+    }
+    .footer_callback-name {
+        margin-bottom: 10px;
+    }
+    .footer_callback-requisites {
+        margin-bottom: 10px;
+    }
+    .footer_callback-adress {
+        margin-bottom: 10px;
+    }
+    .footer_callback-copyright {
+        margin-bottom: 20px;
+    }
+    .footer_contact {
+        margin-bottom: 10px;
+    }
+    .footer_politic {
+        margin-top: 0;
+    }
+    .footer_contract {
+        margin-top: 10px;
+    }
+    .first-section_text {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+
+    .cont {
+        padding: 0 10px;
+    }
+    .first-section_img {
+        width: 146px;
+        height: 194px;
+    }
+    .link a {
+        width: calc(50% - 5px);
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .block {
+        padding: 25px 0;
+    }
+    .first-section_title-mob {
+        font-size: 22px;
+        line-height: 22px;
+        max-width: 100%;
+    }
+    .advantages_item-title {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 3px;
+    }
+
+    .partners_item a {
+        max-width: 170px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .partners_items > * {
+        min-height: 160px;
+    }
+    .partners_item .partners_item-name {
+        max-width: 186px;
+        margin-bottom: 8px;
+    }
+    .practics,
+    .consultation {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        padding-top: 46px;
+        padding-bottom: 40px;
+    }
+
+    .consultation_text {
+        line-height: 1.2;
+    }
+
+    .practics_text {
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .team_item-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .consultation_img {
+        width: 100%;
+        height: auto;
+    }
+    .achievements .slick-prev::before {
+        left: 9px;
+    }
+    .achievements .slick-next:before {
+        left: -2px;
+    }
+
+    .price_item-img {
+        width: 100%;
+        height: auto;
+    }
+    .price_logo {
+        margin: 0 auto;
+    }
+    .price_item .link {
+        width: 100%;
+    }
+    .price_item .link a {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .price_item ul li {
+        line-height: 1.2;
+    }
+    form button {
+        max-width: 100%;
+    }
+
+    .news_item {
+        padding: 20px 8px;
+    }
+    .news_item-text {
+        line-height: 1.2;
+    }
+    .news_item {
+        margin-bottom: 20px;
+    }
+    .news .view-link {
+        font-size: 14px;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+    }
+    .modal {
+        padding: 76px 10px;
+    }
+    .partners_modal-title {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .team_modal-post {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 10px;
+    }
+    .team_modal-name {
+        margin-bottom: 10px;
+    }
+    .team_modal-email {
+        margin-top: 10px;
+    }
+    form .line .field input {
+        padding: 10px 0;
+    }
+    form .line .field textarea {
+        padding: 6px 0 0;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 20px;
+    }
+    .news-page .news_title {
+        text-align: start;
+    }
+    .payment {
+        padding-bottom: 76px;
+    }
+    .tabs button.active {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .tabs button {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .tabs_container form .line:nth-child(3) {
+        flex-wrap: wrap;
+    }
+    .tabs_container form .line:nth-child(3) .field:nth-child(1) {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .tabs_container form .line:nth-child(3) .field:nth-child(2) {
+        margin-right: 0px;
+        width: 48%;
+        margin-top: 15px;
+    }
+    .tabs_container form .line:nth-child(3) .field:nth-child(3) {
+        margin-left: 8px;
+        width: 48%;
+        margin-top: 15px;
+    }
+    .tabs_container form .line {
+        margin-bottom: 15px;
+    }
+
+    .steps_items > *{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cases_item-img {
+        width: 100%;
+        height: auto;
+        height: 160px;
+        overflow: hidden;
+    }
+    .cases_item-img img {
+        width: 100%;
+        height: auto;
+    }
+    .cases_item-title {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .cases_item-title-img {
+        width: 17%;
+        height: auto;
+    }
+    .cases_item {
+        margin-bottom: 25px;
+        padding: 20px 20px 30px;
+    }
+    .cases_item-text {
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .cases .view-link {
+        width: 100%;
+        height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .pagination a {
+        width: 33px;
+        height: 33px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .modal_callback {
+        padding: 50px 10px 10px;
+    }
+    .modal_callback-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .modal_callback .consultation_text {
+        margin-bottom: 10px;
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .videos_item-img img {
+        height: 134px;
+    }
+    .video_item {
+        height: 134px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .video .slick-prev {
+        left: -5px;
+    }
+    .video .slick-next {
+        right: -5px;
+    }
+
+
+    .team_items .team_item:nth-child(4){
+        order:2;
+    }
+
+    .practics_text img{
+        margin-top: -2px;
+    }
+    .first-section_img img{
+        display: block;
+    }
+    .first-section_img{
+        width: calc(50% - 4px);
+        height: auto;
+    }
+    .first-section_left .first-section_img{
+        width: 100%;
+    }
+    .first-section_left{
+        width: calc(50% - 4px);
+    }
+
+    .first-section_links{
+        max-width: 100%;
+    }
+    .header_contacts .header_contact-phone {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .nice-select {
+        font-size: 10px;
+    }
+    header .menu .item > a {
+        padding: 9px 0 6px;
+    }
+
+    .modal_consult-title {
+        font-size: 18x;
+        line-height: 22px;
+        margin-bottom: 18px;
+    }
+    .modal_consult-info ul li {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 30px;
+    }
+    .modal_consult-info ul li::after {
+        top: -2px;
+    }
+    .modal_consult-img-mob img {
+        width: 100%;
+        height: auto;
+    }
+    .price_item ul li {
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    .price_item .link {
+        margin-right: 0;
+    }
+    .price_logo {
+        width: 100%;
+        margin-top: 22px;
+    }
+    .price_box-top {
+        margin-top: 0;
+    }
+    .price_logo img {
+        width: 100%;
+    }
+    .achievements .slick-slide {
+        padding: 0px;
+    }
+    .achievements .slick-prev {
+        left: -5px;
+    }
+    .achievements .slick-next {
+        right: -5px;
+    }
+    .partners_item-name {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .modal_consult {
+        padding: 76px 10px 54px;
+    }
+    .modal_consult form .line .field input {
+        padding: 12px 0 8px;
+    }
+    .payment form button{
+        max-width: 100%;
+    }
+
+    .first-section_links {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .advantages {
+        padding-bottom: 50px;
+    }
+    .team {
+        padding-bottom: 12px;
+    }
+    .cases {
+        padding-top: 5px;
+    }
+
+    .steps_title {
+        text-align: center;
+    }
+    .news {
+        padding-bottom: 37px;
+    }
+    .steps_items {
+        margin-bottom: -30px;
+    }
+    .steps_items > * {
+        margin-bottom: 30px;
+    }
+    .price_item-col {
+        text-align: end;
+    }
+    .price_item-col br {
+        display: block;
+    }
+    .price_item-name {
+        max-width: 222px;
+    }
+    .achievements {
+        padding-bottom: 37px;
+    }
+    footer {
+        padding: 22px 0;
+    }
+
+   
+}
