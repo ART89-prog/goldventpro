@@ -595,8 +595,23 @@ header .cont {
 }
 .license_item {
     position: relative;
+    display: block;
 }
 
+.license_item-bg {
+    background: #F3CD67;
+    opacity: 0;
+    box-shadow: 0px 12px 30px -6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
 .license_item-bg::after {
     content: '';
     position: absolute;
@@ -607,23 +622,6 @@ header .cont {
     width: 40px;
     height: 40px;
     background: url(../images/view.svg);
-}
-.license_item-bg {
-    background: #F3CD67;
-    opacity: 0;
-    box-shadow: 0px 12px 30px -6px rgba(0, 0, 0, 0.1);
-    /* border-radius: 2px; */
-    transition: 0.3s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    /* width: 100%;
-    height: auto; */
-    /* display: none; */
-}
-.license_item-bg {
 }
 .license_item:hover .license_item-bg {
     /* display: block; */
