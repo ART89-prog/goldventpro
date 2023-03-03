@@ -44,10 +44,11 @@ $(() => {
   })
 
 
-  const swiper = new Swiper('.swiper-container', {
+  const swiper = new Swiper('.license .swiper-container', {
     slidesPerView: 4,
     spaceBetween: 10,
     loop: true,
+    navigation: true,
     speed: 500,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -68,6 +69,68 @@ $(() => {
       }
     }
   })
+
+
+  const licenseSliders = [],
+  license = document.querySelectorAll('.license .swiper')
+ 
+  license.forEach(function (el, i) {
+     el.classList.add('license_s' + i)
+ 
+     let options = {
+       loop: true,
+       speed: 500,
+       watchSlidesProgress: true,
+       slideActiveClass: 'active',
+       slideVisibleClass: 'visible',
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev'
+       },
+       preloadImages: false,
+       lazy: {
+         enabled: true,
+         checkInView: true,
+         loadOnTransitionStart: true,
+         loadPrevNext: true
+       },
+       breakpoints: {
+         0: {
+           spaceBetween: 20,
+           slidesPerView: 2
+         },
+         480: {
+           spaceBetween: 20,
+           slidesPerView: 2
+         },
+         768: {
+           spaceBetween: 20,
+           slidesPerView: 3
+         },
+         1023: {
+          spaceBetween: 20,
+          slidesPerView: 3
+        },
+         1280: {
+           spaceBetween: 30,
+           slidesPerView: 4
+         }
+       },
+       on: {
+         init: swiper => {
+           setTimeout(() => setHeight($(swiper.$el).find('license .swiper-slide')))
+         },
+         resize: swiper => {
+           setTimeout(() => {
+             $(swiper.$el).find('.license .swiper-slide').height('auto')
+             setHeight($(swiper.$el).find('.license .swiper-slide'))
+           })
+         }
+       }
+     }
+ 
+     licenseSliders.push(new Swiper('.license_s' + i, options))
+   })
 
 
   // Аккордион

@@ -18,7 +18,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@500;900&family=Ubuntu:wght@400;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@500;900&family=Ubuntu:wght@300;400;700&display=swap"
 		rel="stylesheet">
 
 	<!-- Данное значение часто используют(использовали) поисковые системы -->
@@ -32,9 +32,9 @@
 
 	<!-- Подключение файлов стилей -->
 	<link rel="stylesheet" href="css/fancybox.css">
-	<!-- <link rel="stylesheet" href="css/nice-select.css"> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">	
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -94,6 +94,21 @@
 
 
 
+			<section class="first-section">
+				<div class="cont">
+					<div class="first-section_info">
+						<div class="first-section_title">Монтаж систем вентиляции<br> и кондиционирования<br> под ключ</div>
+						<div class="first-section_btns">
+							<a href="#">
+								<span>рассчитать стоимость</span> 
+							</a>
+							<a href="#">
+								<span>консультация инженера</span> 
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
 			<div class="benefits">
@@ -264,24 +279,63 @@
 
 
 
+
+			<section class="reviews">
+				<div class="cont">
+					<div class="reviews_title title">Отзывы</div>
+					<div class="reviews_text">У нас огромное количество <span>выполненных работ,</span> <br>
+					   <span>довольных клиентов</span> и конечно же - <span>отзывов.</span>
+					</div>
+					<div class="swiper-container swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="reviews_item">
+									<div class="reviews_item-top">
+										<div class="reviews_item-photo">
+											<img src="images/avatar.png" alt="">
+										</div>
+										<div class="reviews_item-info">
+											<div class="reviews_item-name">Максим Завьялов</div>
+											<div class="reviews_item-date">15 февраля 2023</div>
+											<div class="reviews_item-lyke">
+												<img src="images/like.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="reviews_item-text">Почему я решил купить именно этот кондиционер? Кондиционер. Как выбрать кондиционер. Обзор кондиционеров в квартире. Какой выбрать? Кондиционеры. Советы по выбору кондиционера. Что нужно знать при покупке кондиционера? ТОП 5 ошибок при выборе кондиционера | Как выбрать кондиционер Какой кондиционер выбрать в квартиру? Обзор и тест. Выбираем кондиционер | Какой лучше? | Тест. Цены на кондиционеры. Где купить дешевле? КОНДИЦИОНЕР - Что это такое ?</div>
+								</div>								
+							</div>
+						
+						</div>
+						<div class="swiper-button-prev">
+							Предыдущий<br>отзыв
+						</div>
+						<div class="swiper-button-next">
+							Следующий<br>отзыв
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
 			<section class="callback">
 				<div class="cont">
 					<div class="callback_form">
 						<form>
 							<div class="callback_title title">Оставить заявку</div>
-							<div class="callback_text">Оставьте заявку. И оператор с вами свяжется в ближайшие 2 часа!</div>
+							<div class="callback_text">Оставьте заявку. И оператор с вами<br> свяжется в ближайшие 2 часа!</div>
 							<div class="line">
 								<div class="field">
 									<label for="select">Тип объекта</label>
 									<select id="select">
-										<option value="1">Витраж дверей шкафов купе</option>
-										<option value="2">Витраж ниш и перегородок</option>
-										<option value="3">Витраж кухонных фасадов</option>
-										<option value="4">Витраж окон</option>
-										<option value="5">Витраж потолков</option>
-										<option value="6">Витраж вставок в двери</option>
-										<option value="7">Витраж зеркал и стеклянных столов</option>
-										<option value="8">Витраж декоративных панно и картин</option>
+										<option value="1">Столовая</option>
+										<option value="2">Парикмахерская</option>
+										<option value="3">Спортзал</option>
+										<option value="4">Частный дом</option>
+										<option value="5">Цех по переработке...</option>
+										<option value="6">Столовая</option>
+										<option value="7">Промышленное помещение</option>
 									</select>
 								</div>
 							</div>
@@ -306,10 +360,10 @@
 							<div class="line">
 								<div class="field">
 									<label for="message2">Ваше сообщение</label>
-									<input type="tel" id="message2" placeholder="Напишите сообщение">
+									<textarea id="message2" placeholder="Напишите сообщение"></textarea>
 								</div>
 							</div>
-							<div class="modal_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a href="#">пользовательского соглашения</a></div>
+							<div class="callback_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a href="#">пользовательского соглашения</a></div>
 							<button type="submit" class="modal_link" data-content="#modal_callback3">
 								<span>Оставить заявку</span>
 							</button>
@@ -335,54 +389,86 @@
 						</span>
 						<img src="images/licenze_img.png" alt="">
 					</div>
-					<div class="swiper-container">
+					<div class="swiper-container swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<a href="images/license1.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license1.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>								
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license2.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license2.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license3.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license3.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license4.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license4.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license1.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license1.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>								
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license2.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license2.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license3.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license3.png" alt="">
-									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<a href="images/license4.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license4.png" alt="">
-									<div class="license_item-bg"></div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license1.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license1.png" alt="">
+								</a>								
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license2.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license2.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license3.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license3.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license4.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license4.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license1.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license1.png" alt="">
+								</a>								
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license2.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license2.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license3.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license3.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="images/license4.png" class="license_item" data-fancybox="gallery">
+									<img src="images/license4.png" alt="">
 								</a>
 							</div>
 						</div>
