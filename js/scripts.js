@@ -26,6 +26,13 @@ $(() => {
 
 
 
+  // Фокус при клике на название поля
+  $('body').on('click', 'form label', function () {
+    $(this).closest('.line').find('input, textarea').focus()
+  })
+
+
+
   $('body').on('click', '.modal_link', function (e) {
     e.preventDefault()
 
@@ -38,22 +45,23 @@ $(() => {
 
 
   const swiper = new Swiper('.swiper-container', {
-    // Default parameters
-    slidesPerView: 2,
+    slidesPerView: 4,
     spaceBetween: 10,
-    // Responsive breakpoints
+    loop: true,
+    speed: 500,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      // when window width is >= 480px
       480: {
         slidesPerView: 3,
         spaceBetween: 30
       },
-      // when window width is >= 640px
       640: {
         slidesPerView: 4,
         spaceBetween: 40

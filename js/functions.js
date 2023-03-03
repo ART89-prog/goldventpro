@@ -23,97 +23,9 @@ $(() => {
 
 
 	// Маска ввода
-	// $('input[type=tel]').inputmask('+7 (999) 999-99-99')
+	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 
-
-	var input = document.querySelector("#phone");
-	(window.intlTelInput(input, {
-		// allowDropdown: false,
-		autoHideDialCode: true,
-		//   autoPlaceholder: "off",
-		// dropdownContainer: document.body,
-		// excludeCountries: ["us"],
-		// formatOnDisplay: false,
-		//   geoIpLookup: function(callback) {
-		//     $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-		//       var countryCode = (resp && resp.country) ? resp.country : "";
-		//       callback(countryCode);
-		//     });
-		//   },
-		// hiddenInput: "full_number",
-		//   initialCountry: "auto",
-		// localizedCountries: { 'de': 'Deutschland' },
-		nationalMode: false,
-		// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-		// placeholderNumberType: "MOBILE",
-		// preferredCountries: ['cn', 'jp'],
-		// separateDialCode: true,
-		utilsScript: "js/utils.js",
-	}));
-
-
-	var input2 = document.querySelector("#phone2");
-	(window.intlTelInput(input2, {
-		// allowDropdown: false,
-		autoHideDialCode: true,
-		//   autoPlaceholder: "off",
-		// dropdownContainer: document.body,
-		// excludeCountries: ["us"],
-		// formatOnDisplay: false,
-		//   geoIpLookup: function(callback) {
-		//     $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-		//       var countryCode = (resp && resp.country) ? resp.country : "";
-		//       callback(countryCode);
-		//     });
-		//   },
-		// hiddenInput: "full_number",
-		//   initialCountry: "auto",
-		// localizedCountries: { 'de': 'Deutschland' },
-		nationalMode: false,
-		// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-		// placeholderNumberType: "MOBILE",
-		// preferredCountries: ['cn', 'jp'],
-		// separateDialCode: true,
-		utilsScript: "js/utils.js",
-	}));
-
-
-
-	// Табы
-	var locationHash = window.location.hash
-
-	$('body').on('click', '.tabs button', function (e) {
-		e.preventDefault()
-
-		if (!$(this).hasClass('active')) {
-			const $parent = $(this).closest('.tabs_container'),
-				activeTab = $(this).data('content'),
-				$activeTabContent = $(activeTab),
-				level = $(this).data('level')
-
-			$parent.find('.tabs:first button').removeClass('active')
-			$parent.find('.tab_content.' + level).removeClass('active')
-
-			$(this).addClass('active')
-			$activeTabContent.addClass('active')
-		}
-	})
-
-	if (locationHash && $('.tabs_container').length) {
-		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
-			$activeTabContent = $(locationHash),
-			$parent = $activeTab.closest('.tabs_container'),
-			level = $activeTab.data('level')
-
-		$parent.find('.tabs:first button').removeClass('active')
-		$parent.find('.tab_content.' + level).removeClass('active')
-
-		$activeTab.addClass('active')
-		$activeTabContent.addClass('active')
-
-		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
-	}
 
 	// Скрол к пунктам меню
 	// $(".scroll").on("click", function (e) {

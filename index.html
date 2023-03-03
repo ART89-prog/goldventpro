@@ -32,7 +32,8 @@
 
 	<!-- Подключение файлов стилей -->
 	<link rel="stylesheet" href="css/fancybox.css">
-	<link rel="stylesheet" href="css/nice-select.css">
+	<!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">	
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -53,22 +54,20 @@
 						<img src="images/logo.png" alt="">
 					</a>
 					<nav class="menu">
-						<div class="cont">
-							<div class="item">
-								<a href="#practics">О компании</a>
-							</div>
-							<div class="item">
-								<a href="#partners">Объекты</a>
-							</div>
-							<div class="item">
-								<a href="#cases">Oтзывы</a>
-							</div>
-							<div class="item">
-								<a href="#price">лицензии</a>
-							</div>
-							<div class="item">
-								<a href="#news">частые вопросы</a>
-							</div>
+						<div class="item">
+							<a href="#practics">О компании</a>
+						</div>
+						<div class="item">
+							<a href="#partners">Объекты</a>
+						</div>
+						<div class="item">
+							<a href="#cases">Oтзывы</a>
+						</div>
+						<div class="item">
+							<a href="#price">лицензии</a>
+						</div>
+						<div class="item">
+							<a href="#news">частые вопросы</a>
 						</div>
 					</nav>
 					<div class="header_contacts">
@@ -76,8 +75,7 @@
 						<div class="header_contacts-bottom">
 							<div class="header_contacts-soc">
 								<a href="https://t.me/" target="_blank"><img src="images/telegram.svg" alt=""></a>
-								<a href=":https://wa.me/74954443322" target="_blank"><img src="images/what.svg"
-										alt=""></a>
+								<a href=":https://wa.me/74954443322" target="_blank"><img src="images/what.svg"	alt=""></a>
 							</div>
 							<button class="modal_link btn_callback" data-content="#modal_callback">
 								<span>Заказать звонок</span>
@@ -266,59 +264,123 @@
 
 
 
+			<section class="callback">
+				<div class="cont">
+					<div class="callback_form">
+						<form>
+							<div class="callback_title title">Оставить заявку</div>
+							<div class="callback_text">Оставьте заявку. И оператор с вами свяжется в ближайшие 2 часа!</div>
+							<div class="line">
+								<div class="field">
+									<label for="select">Тип объекта</label>
+									<select id="select">
+										<option value="1">Витраж дверей шкафов купе</option>
+										<option value="2">Витраж ниш и перегородок</option>
+										<option value="3">Витраж кухонных фасадов</option>
+										<option value="4">Витраж окон</option>
+										<option value="5">Витраж потолков</option>
+										<option value="6">Витраж вставок в двери</option>
+										<option value="7">Витраж зеркал и стеклянных столов</option>
+										<option value="8">Витраж декоративных панно и картин</option>
+									</select>
+								</div>
+							</div>
+							<div class="line">
+								<div class="field">
+									<label for="name2">Ваше имя</label>
+									<input type="text" id="name2" placeholder="Василий">
+								</div>
+							</div>
+							<div class="line">
+								<div class="field">
+									<label for="email">Ваша электронная почта</label>
+									<input type="email" id="email" placeholder="fdg6789n34">
+								</div>
+							</div>
+							<div class="line">
+								<div class="field">
+									<label for="phone2">Контактный номер телефона</label>
+									<input type="tel" id="phone2">
+								</div>
+							</div>
+							<div class="line">
+								<div class="field">
+									<label for="message2">Ваше сообщение</label>
+									<input type="tel" id="message2" placeholder="Напишите сообщение">
+								</div>
+							</div>
+							<div class="modal_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a href="#">пользовательского соглашения</a></div>
+							<button type="submit" class="modal_link" data-content="#modal_callback3">
+								<span>Оставить заявку</span>
+							</button>
+						</form> 	
+					</div>
+					
+					<div class="callback_img">
+						<img src="images/callback_img.png" alt="">
+					</div>
+				</div>
+			</section>
+
+
+
 			<section class="license">
 				<div class="cont">
 					<div class="license_title title">Лицензии и благодарственные письма</div>
-					<div class="license_text">Сложно сказать, почему независимые государства призывают нас к новым
-						свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Также как
-						высокотехнологичная концепция общественного уклада, в своём классическом представлении,
-						допускает внедрение направлений прогрессивного развития.</div>
+					<div class="license_text">
+						<span>Сложно сказать, почему независимые государства призывают нас к новым
+							свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Также как
+							высокотехнологичная концепция общественного уклада, в своём классическом представлении,
+							допускает внедрение направлений прогрессивного развития.
+						</span>
+						<img src="images/licenze_img.png" alt="">
+					</div>
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license1.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license1.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>								
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license2.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license2.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license3.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license3.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license4.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license4.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license1.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license1.png" alt="">
 									<div class="license_item-bg"></div>
-								</a>
+								</a>								
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license2.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license2.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license3.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license3.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a href="#" class="license_item">
+								<a href="images/license4.png" class="license_item" data-fancybox="gallery">
 									<img src="images/license4.png" alt="">
 									<div class="license_item-bg"></div>
 								</a>
@@ -406,6 +468,13 @@
 								процессы жизнедеятельности, отводятся на улицу и не попадает в комнаты.</p>
 						</div>
 					</div>
+					<div class="accordion_text">Не нашли ответ? Напишите нам в WhatsApp в один клик</div>
+					<a href="#" class="accordion_link">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#whats"></use>
+						</svg>
+						<span>Задать свой вопрос в WhatsApp</span>
+					</a>
 				</div>
 			</section>
 
@@ -415,7 +484,38 @@
 
 
 		<footer>
-
+			<div class="cont">
+				<a href="index.html" class="footer_logo">
+					<img src="images/logo2.png" alt="">
+				</a>
+				<nav class="menu">				
+					<div class="item">
+						<a href="#practics">О компании</a>
+					</div>
+					<div class="item">
+						<a href="#partners">Объекты</a>
+					</div>
+					<div class="item">
+						<a href="#cases">Oтзывы</a>
+					</div>
+					<div class="item">
+						<a href="#price">лицензии</a>
+					</div>
+					<div class="item">
+						<a href="#news">частые вопросы</a>
+					</div>				
+				</nav>
+				<div class="footer_contacts">
+					<div class="footer_contacts-soc">
+						<a href="https://t.me/" target="_blank"><img src="images/footer_tg.svg" alt=""></a>
+						<a href=":https://wa.me/74954443322" target="_blank"><img src="images/footer_whats.svg"	alt=""></a>
+					</div>
+					<a href="tel:74954443322" class="footer_contacts-phone">+7 (495) 444-33-22</a>
+					<button class="modal_link btn_callback" data-content="#modal_callback">
+						<span>Заказать звонок</span>
+					</button>
+				</div>
+			</div>
 		</footer>
 
 
@@ -430,42 +530,69 @@
 
 
 
-	<section class="modal_consult" id="modal_callback">
-		<div class="modal_consult-title title">Заполните форму ниже и получите первичную бесплатную юридическую
-			консультацию</div>
-		<div class="modal_consult-info">
-			<div class="modal_consult-wrap">
-				<ul>
-					<li>Анализ текущей ситуации</li>
-					<li>Варианты решения вашего дела</li>
-					<li>Прогноз результатов</li>
-					<li>Расчет стоимости услуг юриста</li>
-				</ul>
-				<div class="modal_consult-img-mob">
-					<img src="images/modal_img.jpg" alt="">
+	<section class="modal" id="modal_callback">
+		<div class="modal_title title">Заказать звонок</div>
+		<div class="modal_text">Оставьте заявку. И оператор с вами свяжется в ближайшие 2 часа!</div>
+		<form>
+			<div class="line">
+				<div class="field">
+					<label for="name">Ваше имя</label>
+					<input type="text" id="name" placeholder="Евгений">
 				</div>
-				<form>
-					<div class="line">
-						<div class="field">
-							<input type="text" placeholder="Ваше имя">
-						</div>
-					</div>
-					<div class="line">
-						<div class="field">
-							<input type="tel" id="phone2">
-						</div>
-					</div>
-					<button class="btn btn-primary btn-blick" type="submit">
-						<i class="btn-blick-anim1"></i>
-						<i class="btn-blick-anim2"></i>
-						<span>Получить консультацию</span>
-					</button>
-				</form>
 			</div>
-			<div class="modal_consult-img">
-				<img src="images/modal_img.jpg" alt="">
+			<div class="line">
+				<div class="field">
+					<label for="phone">Контактный номер телефона</label>
+					<input type="tel" id="phone" placeholder="+7 (888) 777 55 22">
+				</div>
 			</div>
+			<div class="modal_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a href="#">пользовательского соглашения</a></div>
+			<button type="submit" class="modal_link" data-content="#modal_callback3">
+				<span>Заказать звонок</span>
+			</button>
+		</form>
+	</section>
+
+
+
+	<section class="modal" id="modal_callback">
+		<div class="modal_title title">Оставить заявку</div>
+		<div class="modal_text">Оставьте заявку. И оператор с вами свяжется в ближайшие 2 часа!</div>
+		<form>
+			<div class="line">
+				<div class="field">
+					<label for="name">Ваше имя</label>
+					<input type="text" id="name" placeholder="Евгений">
+				</div>
+			</div>
+			<div class="line">
+				<div class="field">
+					<label for="phone">Контактный номер телефона</label>
+					<input type="tel" id="phone" placeholder="+7 (888) 777 55 22">
+				</div>
+			</div>
+			<div class="line">
+				<div class="field">
+					<label for="message">Ваше сообщение</label>
+					<textarea placeholder="Есть над чем задуматься: диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены!" id="message"></textarea>
+				</div>
+			</div>
+			<div class="modal_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a href="#">пользовательского соглашения</a></div>
+			<button type="submit" class="modal_link" data-content="#modal_callback3">
+				<span>Оставить заявку</span>
+			</button>
+		</form>
+	</section>
+
+
+
+	<section class="modal2" id="modal_callback3">
+		<div class="modal_img">
+			<img src="images/subtract.svg" alt="">
 		</div>
+		<div class="modal_title title">Спасибо!</div>
+		<div class="modal_text">Ваша заявка отправлена!</div>
+		<div class="modal_desc">Мы с вами свяжемся<br>	в ближайшее время.</div>
 	</section>
 
 
