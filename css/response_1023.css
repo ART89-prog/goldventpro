@@ -1,8 +1,8 @@
 @media print, (max-width: 1023px) {
  
     :root {
-        --font_size: 15px;
-        --font_size_title: 32px;
+        --font_size: 16px;
+        --font_size_title: 40px;
     }
     header .mob_menu_btn {
         display: flex;
@@ -13,6 +13,7 @@
         position: fixed;
         z-index: 107;
         right: 100%;
+        top: 170px;
         display: flex;
         overflow: auto;
         width: 100%;
@@ -21,7 +22,7 @@
         min-height: -webkit-fill-available;
         min-height:         fill-available;
         margin: 0;
-        padding: 50px 0px 20px;
+        padding: 35px 20px 20px;
         transition: transform .3s linear;
         background: #fff;
         justify-content: flex-start;
@@ -103,6 +104,7 @@
     header .menu .item a {
         display: block;
         text-align: start;
+        margin-right: 0;
     }
     .header-phone_mob {
         display: block;
@@ -123,7 +125,13 @@
         line-height: 25px;        
         color: #000000;
         padding: 10px 0;
-        
+    }
+    .header_contacts {
+        margin-left: auto;
+    }
+    .header_contacts-phone {
+        font-size: 30px;
+        line-height: 36px;
     }
    
     

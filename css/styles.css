@@ -228,7 +228,7 @@ button {
 .overlay {
     position: fixed;
     z-index: 102;
-    top: 110px;
+    top: 170px;
     left: 0;
 
     display: none;
@@ -281,8 +281,8 @@ button {
 
 header .mob_menu_btn {
     display: none;
-    width: 47px;
-    height: 26px;
+    width: 98px;
+    height: 90px;
     margin-right: 0px;
     margin-left: 30px;
     justify-content: center;
@@ -290,11 +290,6 @@ header .mob_menu_btn {
     align-content: center;
     flex-wrap: wrap;
     z-index: 8;
-}
-header .mob_menu_btn .icon {
-    display: block;
-    width: 20px;
-    height: 18px;
 }
 header .close_btn {
     color: #000;   
@@ -306,8 +301,8 @@ header .close_btn {
     flex-wrap: wrap;
     margin-right: 0px;
     margin-left: 30px;
-    width: 47px;
-    height: 26px;
+    width: 98px;
+    height: 90px;
 }
 header .menu {
     display: flex;
@@ -337,6 +332,10 @@ header .menu .item > a:hover {
 }
 header {
     padding: 60px 0 68px;
+    position: fixed;
+    z-index: 200;
+    background: #fff;
+    width: 100%;
 }
 header .cont {
     display: flex;
@@ -368,6 +367,12 @@ header .cont {
     width: 36px;
     height: 38px;
     display: block;
+    top: 0;
+    transition: all .4s;
+}
+.header_contacts-soc a:hover {
+    transform: translateY(-7px);
+    position: relative;    
 }
 .header_contacts-soc a + a {
     margin-left: 15px;
@@ -383,8 +388,16 @@ header .cont {
     line-height: 30px;
     text-transform: uppercase;
     color: #212121;
+    transition: all .4s;
 }
-
+.btn_callback:hover {
+    background: #E2B848;
+}
+.btn_callback:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+    color: #FFFFFF;
+}
 
 .title {
     font-family: 'Raleway';
@@ -457,6 +470,7 @@ header .cont {
 
 
 .first-section {
+    margin-top: 228px;
 }
 .first-section .cont {
     position: relative;
@@ -573,11 +587,24 @@ header .cont {
     padding: 0 22px;
     white-space: nowrap;
     margin-top: 12px;
+    transition: all .4s;
 }
 .object_item-link .icon {
     width: 12px;
     height: 6px;
     fill: #212121;
+}
+.object_item-link:hover {
+    background: #F3CD67;
+    box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
+}
+.object_item-link:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+    color: #fff;
+}
+.object_item-link:active .icon {
+    fill: #fff;
 }
 
 
@@ -789,7 +816,15 @@ header .cont {
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    color: #212121;
+    transition: all .4s;
+}
+.callback form button:hover {
+    background: #E2B848;
+}
+.callback form button:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+    color: #FFFFFF;
 }
 .callback form textarea {
     background: #FAFAFA;
@@ -883,6 +918,7 @@ header .cont {
     border-radius: 2px;
     transform: translateY(-50%);
     left: calc(50% - 650px);
+    transition: all .4s;
 }
 .license .swiper-button-next {
     width: 73px;
@@ -892,6 +928,7 @@ header .cont {
     border-radius: 2px;
     transform: translateY(-50%);
     left: calc(50% + 580px);
+    transition: all .4s;
 }
 .license .swiper-button-prev:before {
     background: url(../images/arrow_prev.svg);
@@ -914,6 +951,20 @@ header .cont {
     content: "";
     width: 29px;
     height: 10px;
+}
+.license .swiper-button-prev:hover {
+    background: #E2B848;
+}
+.license .swiper-button-next:hover {
+    background: #E2B848;
+}
+.license .swiper-button-prev:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+}
+.license .swiper-button-next:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .license .swiper {
     overflow: visible !important;
@@ -1162,6 +1213,9 @@ footer .menu .item a {
     margin-right: 34px;
     margin-bottom: 17px;
 }
+footer .menu .item > a:hover {
+    color: #0AA7B1;
+}
 .footer_contacts {
     display: flex;
     align-items: center;
@@ -1181,6 +1235,10 @@ footer .menu .item a {
     display: block;
     margin-left: 36px;
     margin-right: 22px;
+    transition: all .4s;
+}
+.footer_contacts-phone:hover {
+    color: #0AA7B1;
 }
 .footer_contacts-soc a:nth-child(1) {
     width: 16px;
@@ -1195,10 +1253,14 @@ footer .menu .item a {
     display: block;   
     margin-top: -8px; 
 }
-
-
-
-
+.footer_contacts-soc a {
+    top: 0;
+    transition: all .4s;    
+}
+.footer_contacts-soc a:hover {
+transform: translateY(-5px);
+position: relative;    
+}
 
 
 
@@ -1292,6 +1354,15 @@ input:-ms-input-placeholder {
     text-align: center;
     text-transform: uppercase;
     color: #212121;
+    transition: all .4s;
+}
+.modal form button:hover {
+    background: #E2B848;
+}
+.modal form button:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+    color: #FFFFFF;
 }
 
 
@@ -1335,4 +1406,28 @@ input:-ms-input-placeholder {
 }
 .modal2 .modal_img {
     margin: 0 auto;
+}
+.modal2 form button {
+    margin-top: 12px;
+    width: 414px;
+    height: 45px;
+    background: #F3CD67;
+    box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
+    border-radius: 2px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+    transition: all .4s;
+}
+.modal2 form button:hover {
+    background: #E2B848;
+}
+.modal2 form button:active {
+    background: #0AA7B1;
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+    color: #FFFFFF;
 }
