@@ -123,6 +123,11 @@ $(() => {
         nextEl: '.swiper-button-next2',
         prevEl: '.swiper-button-prev2'
       },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
       preloadImages: false,
       lazy: {
         enabled: true,
