@@ -708,6 +708,37 @@ header .cont {
 .object_item-link:active .icon {
     fill: #fff;
 }
+.object_link {
+    text-decoration: none;
+    background: #0AA7B1;
+    box-shadow: 0px 8px 14px rgba(10, 167, 177, 0.3);
+    border-radius: 2px; 
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    width: 248px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 28px;
+    padding-right: 22px;
+    margin: 70px auto 0;
+}
+.object_link .icon {
+    width: 15px;
+    height: 9px;
+    fill: #fff;
+}
+.object_link.active {
+    display: none;
+}
+.object_items.hide-content {
+    margin-top: 40px;
+}
 
 
 
@@ -831,14 +862,24 @@ header .cont {
     padding: 0 14px;
     margin-bottom: 18px;
 }
+.nice-select:after {
+    border-bottom: 1px solid #212121;
+    border-right: 1px solid #212121;
+    height: 10px;
+    margin-top: -4px;
+    right: 21px;
+    top: 50%;
+    width: 10px;
+}
 .nice-select.open .list {
     width: 100%;
-    border: 1px solid #212121;
-    border-top: none;
+    border: 1px solid #e3e3e3;
+    border-top: 1px solid #FAFAFA;
     border-radius: 2px;
     margin-top: -1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    background: #FAFAFA;
 }
 .nice-select .list {
     border-radius: 2px;
@@ -846,11 +887,28 @@ header .cont {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: none;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    box-shadow: none;
+}
+.nice-select .option {
+    color: #C5C5C5; 
+    line-height: 24px;
+    list-style: none;
+    min-height: 32px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.nice-select .option:hover, 
+.nice-select .option.focus, 
+.nice-select .option.selected.focus {
+    color: #212121;
+    background: none;
 }
 .nice-select:active, 
 .nice-select.open, 
 .nice-select:focus {
-    border: 1px solid #212121;    
+    border: 1px solid #e3e3e3;    
 }
 .nice-select.open {
     border-bottom: none;

@@ -234,6 +234,13 @@ $(() => {
 
 
 
+  // Показать контент
+  $(".hide-content").hide();
+  $(".object_link").click(function (e) {
+    e.preventDefault();
+    $(this).next(".hide-content").slideToggle();
+    $(".object_link").addClass("active");
+  });
 
 
   // Аккордион
