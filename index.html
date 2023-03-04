@@ -34,7 +34,6 @@
 	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -105,10 +104,10 @@
 										<div class="first-section_title">Монтаж систем вентиляции<br> и кондиционирования<br> под ключ
 										</div>
 										<div class="first-section_btns">
-											<a href="#">
+											<a href="#" class="modal_link" data-content="#modal_callback2">
 												<span>рассчитать стоимость</span>
 											</a>
-											<a href="#">
+											<a href="#" class="modal_link" data-content="#modal_callback2">
 												<span>консультация инженера</span>
 											</a>
 										</div>
@@ -124,10 +123,10 @@
 										<div class="first-section_title">Монтаж систем вентиляции<br> и кондиционирования<br> под ключ
 										</div>
 										<div class="first-section_btns">
-											<a href="#">
+											<a href="#" class="modal_link" data-content="#modal_callback2">
 												<span>рассчитать стоимость</span>
 											</a>
-											<a href="#">
+											<a href="#" class="modal_link" data-content="#modal_callback2">
 												<span>консультация инженера</span>
 											</a>
 										</div>
@@ -143,10 +142,10 @@
 										<div class="first-section_title">Монтаж систем вентиляции<br> и кондиционирования<br> под ключ
 										</div>
 										<div class="first-section_btns">
-											<a href="#">
+											<a href="#" class="modal_link" data-content="#modal_callback2">
 												<span>рассчитать стоимость</span>
 											</a>
-											<a href="#">
+											<a href="#" class="modal_link" data-content="#modal_callback2">
 												<span>консультация инженера</span>
 											</a>
 										</div>
@@ -563,13 +562,13 @@
 							<div class="line">
 								<div class="field">
 									<label for="name2">Ваше имя</label>
-									<input type="text" id="name2" placeholder="Василий">
+									<input type="text" id="name2" class="success" placeholder="Василий">
 								</div>
 							</div>
 							<div class="line">
 								<div class="field">
 									<label for="email">Ваша электронная почта</label>
-									<input type="email" id="email" placeholder="fdg6789n34">
+									<input type="email" class="error" id="email" placeholder="fdg6789n34">
 								</div>
 							</div>
 							<div class="line">
@@ -860,7 +859,7 @@
 			<div class="line">
 				<div class="field">
 					<label for="phone">Контактный номер телефона</label>
-					<input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+					<input type="tel" id="phone" class="success" placeholder="+7 (___) ___-__-__">
 				</div>
 			</div>
 			<div class="modal_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a
@@ -873,7 +872,7 @@
 
 
 
-	<section class="modal" id="modal_callback">
+	<section class="modal" id="modal_callback2">
 		<div class="modal_title title">Оставить заявку</div>
 		<div class="modal_text">Оставьте заявку. И оператор с вами свяжется в ближайшие 2 часа!</div>
 		<form>
@@ -886,15 +885,13 @@
 			<div class="line">
 				<div class="field">
 					<label for="phone">Контактный номер телефона</label>
-					<input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+					<input type="tel" class="success" id="phone" placeholder="+7 (___) ___-__-__">
 				</div>
 			</div>
 			<div class="line">
 				<div class="field">
 					<label for="message">Ваше сообщение</label>
-					<textarea
-						placeholder="Есть над чем задуматься: диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены!"
-						id="message"></textarea>
+					<textarea placeholder="Есть над чем задуматься: диаграммы связей..." id="message"></textarea>
 				</div>
 			</div>
 			<div class="modal_politic">Заполняя форму, вы соглашаетесь с обработкой персональных данных согласно <a
