@@ -5,6 +5,32 @@
         --font_size_title: 40px;
     }
 
+    footer .menu {
+        flex-direction: column;
+    }
+    footer .menu .item a {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    footer .menu .item:last-child a {
+        margin-bottom: 0;
+    }
+    .footer_logo {
+        margin-right: 0px;
+    }
+    .footer_contacts {
+        flex-direction: column;
+    }
+    .footer_contacts-phone {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 70px;
+        margin-bottom: 39px;
+        order: -1;
+    }
+    footer .btn_callback {
+        margin-top: 3.9em;
+    }
 
 
 
