@@ -156,7 +156,7 @@ body {
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height: fill-available;
-
+    background: #E4F5F7;
 }
 
 
@@ -419,6 +419,7 @@ header .cont {
 .benefits_items {
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
     margin-left: -20px;
     margin-bottom: -20px;
 }
@@ -535,7 +536,7 @@ header .cont {
 .first-section_wrap:before {
     position: absolute;
     content: "";
-    width: 1121px;
+    width: 100%;
     height: 100px;
     background: var(--text_color);
     opacity: 0.14;
@@ -570,7 +571,7 @@ header .cont {
     border-radius: 2px;
     bottom: 50%;
     transform: translateY(50%);
-    left: calc(50% - 635px);
+    left: -30px;
     transition: all .4s;
     position: absolute;
     z-index: 3;
@@ -584,7 +585,7 @@ header .cont {
     border-radius: 2px;
     bottom: 50%;
     transform: translateY(50%);
-    left: calc(50% + 575px);
+    right: -25px;
     transition: all .4s;
     position: absolute;
     z-index: 3;
@@ -631,18 +632,9 @@ header .cont {
 .first-section .swiper {
     overflow: visible !important;
 }
-/* .first-section .swiper-slide {
-    position: relative;
-    visibility: hidden;
-    width: auto;
-    transition: opacity .2s linear, visibility .2s linear;
-    pointer-events: none;
-    opacity: 0;
-} */
 .first-section .swiper-slide.swiper-slide-next {
     transform: scale(0.64);  
-    background: #212121;
-    opacity: 0.14;
+    opacity: 0.54;
     filter: blur(3.1077px);
     border-radius: 12.8252px;
 }
@@ -650,9 +642,8 @@ header .cont {
 .first-section .swiper-slide.swiper-slide-prev {
     transform: scale(0.64);
     position: relative;
-    background: #212121;
-    opacity: 0.14;
-    filter: blur(8.1077px);
+    opacity: 0.54;
+    filter: blur(5.1077px);
     border-radius: 12.8252px;
 }
 .first-section .swiper-slide.visible {
@@ -715,13 +706,19 @@ header .cont {
     margin-bottom: 40px;
 }
 .object_item-img {
-    width: 388px;
-    height: 235px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60.57%;
 }
 .object_item-img img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .object_item-title {
     font-weight: 700;
@@ -820,7 +817,7 @@ header .cont {
 .about {
     padding: 70px 0;
 }
-.about .cont {
+.about_wrap {
     display: flex;
     justify-content: space-between;
 }
@@ -871,7 +868,6 @@ header .cont {
 }
 .about_img {
     margin-right: -345px;
-    margin-top: 30px;
     position: relative;
     width: 859px;
     height: 665px;
@@ -1206,7 +1202,7 @@ form input.error {
     box-shadow: 0px 5px 15px rgba(243, 205, 103, 0.2);
     border-radius: 2px;
     transform: translateY(-50%);
-    left: calc(50% - 640px);
+    left: 0;
     transition: all .4s;
 }
 .license .swiper-button-next {
@@ -1216,7 +1212,7 @@ form input.error {
     box-shadow: 0px 5px 15px rgba(243, 205, 103, 0.2);
     border-radius: 2px;
     transform: translateY(-50%);
-    left: calc(50% + 565px);
+    left: auto;
     transition: all .4s;
 }
 .license .swiper-button-prev .icon {
@@ -1435,20 +1431,22 @@ form input.error {
 .reviews .swiper {
     overflow: visible !important;
 }
-.reviews .swiper-slide {
-    position: relative;
-    visibility: hidden;
-    width: auto;
-    transition: opacity .2s linear, visibility .2s linear;
-    pointer-events: none;
-    opacity: 0;
-}
 .reviews .swiper-slide.visible {
     visibility: visible;
     pointer-events: auto;
     opacity: 1;
 }
-
+.reviews .swiper-slide.swiper-slide-next {
+    transform: scale(0.6);  
+    opacity: 0.64;
+    filter: blur(1.1077px);
+}
+.reviews .swiper-slide.swiper-slide-prev {
+    transform: scale(0.6);
+    position: relative;
+    opacity: 0.64;
+    filter: blur(1.1077px);
+}
 
 
 /* accordion */
@@ -1616,6 +1614,7 @@ footer .menu .item > a:hover {
     margin-left: 36px;
     margin-right: 22px;
     transition: all .4s;
+    white-space: nowrap;
 }
 .footer_contacts-phone:hover {
     color: var(--bg);
@@ -1640,6 +1639,9 @@ footer .menu .item > a:hover {
 .footer_contacts-soc a:hover {
 transform: translateY(-5px);
 position: relative;    
+}
+.footer_logo {
+    margin-right: 20px;
 }
 
 

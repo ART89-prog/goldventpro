@@ -133,6 +133,44 @@
         font-size: 30px;
         line-height: 36px;
     }
+
+    .benefits_items > * {
+        width: calc(100%/2 - 20px);
+    }
+    .object_items > * {
+        width: calc(100%/2 - 20px);
+    }
+    .about_wrap {
+        flex-direction: column-reverse;
+    }
+    .about_img {
+        margin-right: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .about_img img {
+        width: 100%;
+    }
+    .about_link {
+        margin: 40px auto 0;
+    }
+    .callback_img {
+        display: none;
+    }
+    .callback_form {
+        margin: 0 auto;
+    }
+    footer .cont {
+        flex-direction: column;
+    }
+    footer .menu {
+        margin-top: 25px;
+        justify-content: center;
+        width: 100%;
+    }
+    footer .menu .item:last-child a {
+        margin-right: 0;
+    }
    
     
 

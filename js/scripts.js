@@ -79,7 +79,7 @@ $(() => {
         },
         768: {
           spaceBetween: 20,
-          slidesPerView: 3
+          slidesPerView: 2
         },
         1023: {
           spaceBetween: 20,
@@ -136,12 +136,12 @@ $(() => {
       },
       breakpoints: {
         0: {
-          spaceBetween: 20,
-          slidesPerView: 2
+          spaceBetween: 0,
+          slidesPerView: 1
         },
         480: {
-          spaceBetween: 20,
-          slidesPerView: 2
+          spaceBetween: 0,
+          slidesPerView: 1
         },
         768: {
           spaceBetween: 0,
@@ -200,12 +200,12 @@ $(() => {
       },
       breakpoints: {
         0: {
-          spaceBetween: 20,
-          slidesPerView: 2
+          spaceBetween: 0,
+          slidesPerView: 1
         },
         480: {
-          spaceBetween: 20,
-          slidesPerView: 2
+          spaceBetween: 0,
+          slidesPerView: 1
         },
         768: {
           spaceBetween: 0,
@@ -216,7 +216,7 @@ $(() => {
           slidesPerView: 1
         },
         1280: {
-          spaceBetween: 0,
+          spaceBetween: -250,
           slidesPerView: 1
         }
       },

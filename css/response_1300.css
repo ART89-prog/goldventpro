@@ -5,6 +5,49 @@
         --font_size_title: 40px;
     }
 
+    .first-section .cont {
+        padding: 0 40px;
+    }
+    .first-section_img {
+        height: 320px;
+    }
+    .first-section_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets, 
+    .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 30px;
+    }
+    .about_info {
+        margin-right: 20px;
+    }
+    .reviews .swiper-button-prev3 {
+        bottom: 70%;
+        left: 0;
+    }
+    .reviews .swiper-button-next3 {
+        bottom: 70%;
+        left: auto;
+        right: 0%;
+    }
+    .license_text img {
+        right: calc(-100% + 120px);
+    }
+    .license .swiper-container {
+        padding: 0 40px;
+    }
+    .license .swiper-button-prev {
+        left: 0;
+    }
+    .license .swiper-button-next {
+        left: auto;
+    }
+
+
 
 
 }
