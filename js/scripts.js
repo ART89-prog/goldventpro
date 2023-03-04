@@ -44,93 +44,196 @@ $(() => {
   })
 
 
-  const swiper = new Swiper('.license .swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    loop: true,
-    navigation: true,
-    speed: 500,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 40
-      }
-    }
-  })
-
 
   const licenseSliders = [],
-  license = document.querySelectorAll('.license .swiper')
- 
+    license = document.querySelectorAll('.license .swiper')
+
   license.forEach(function (el, i) {
-     el.classList.add('license_s' + i)
- 
-     let options = {
-       loop: true,
-       speed: 500,
-       watchSlidesProgress: true,
-       slideActiveClass: 'active',
-       slideVisibleClass: 'visible',
-       navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev'
-       },
-       preloadImages: false,
-       lazy: {
-         enabled: true,
-         checkInView: true,
-         loadOnTransitionStart: true,
-         loadPrevNext: true
-       },
-       breakpoints: {
-         0: {
-           spaceBetween: 20,
-           slidesPerView: 2
-         },
-         480: {
-           spaceBetween: 20,
-           slidesPerView: 2
-         },
-         768: {
-           spaceBetween: 20,
-           slidesPerView: 3
-         },
-         1023: {
+    el.classList.add('license_s' + i)
+
+    let options = {
+      loop: true,
+      speed: 500,
+      watchSlidesProgress: true,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      preloadImages: false,
+      lazy: {
+        enabled: true,
+        checkInView: true,
+        loadOnTransitionStart: true,
+        loadPrevNext: true
+      },
+      breakpoints: {
+        0: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        480: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        768: {
           spaceBetween: 20,
           slidesPerView: 3
         },
-         1280: {
-           spaceBetween: 30,
-           slidesPerView: 4
-         }
-       },
-       on: {
-         init: swiper => {
-           setTimeout(() => setHeight($(swiper.$el).find('license .swiper-slide')))
-         },
-         resize: swiper => {
-           setTimeout(() => {
-             $(swiper.$el).find('.license .swiper-slide').height('auto')
-             setHeight($(swiper.$el).find('.license .swiper-slide'))
-           })
-         }
-       }
-     }
- 
-     licenseSliders.push(new Swiper('.license_s' + i, options))
-   })
+        1023: {
+          spaceBetween: 20,
+          slidesPerView: 3
+        },
+        1280: {
+          spaceBetween: 30,
+          slidesPerView: 4
+        }
+      },
+      on: {
+        init: swiper => {
+          setTimeout(() => setHeight($(swiper.$el).find('license .swiper-slide')))
+        },
+        resize: swiper => {
+          setTimeout(() => {
+            $(swiper.$el).find('.license .swiper-slide').height('auto')
+            setHeight($(swiper.$el).find('.license .swiper-slide'))
+          })
+        }
+      }
+    }
+
+    licenseSliders.push(new Swiper('.license_s' + i, options))
+  })
+
+
+  const firstSliders = [],
+    first = document.querySelectorAll('.first-section .swiper')
+
+  first.forEach(function (el, i) {
+    el.classList.add('first_s' + i)
+
+    let options = {
+      loop: true,
+      speed: 500,
+      watchSlidesProgress: true,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2'
+      },
+      preloadImages: false,
+      lazy: {
+        enabled: true,
+        checkInView: true,
+        loadOnTransitionStart: true,
+        loadPrevNext: true
+      },
+      breakpoints: {
+        0: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        480: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        768: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1023: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1280: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        }
+      },
+      on: {
+        init: swiper => {
+          setTimeout(() => setHeight($(swiper.$el).find('.first-section .swiper-slide')))
+        },
+        resize: swiper => {
+          setTimeout(() => {
+            $(swiper.$el).find('.first-section .swiper-slide').height('auto')
+            setHeight($(swiper.$el).find('.first-section .swiper-slide'))
+          })
+        }
+      }
+    }
+
+    firstSliders.push(new Swiper('.first_s' + i, options))
+  })
+
+
+
+
+  const reviewsSliders = [],
+    reviews = document.querySelectorAll('.reviews .swiper')
+
+  reviews.forEach(function (el, i) {
+    el.classList.add('reviews_s' + i)
+
+    let options = {
+      loop: true,
+      speed: 500,
+      watchSlidesProgress: true,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      navigation: {
+        nextEl: '.swiper-button-next3',
+        prevEl: '.swiper-button-prev3'
+      },
+      preloadImages: false,
+      lazy: {
+        enabled: true,
+        checkInView: true,
+        loadOnTransitionStart: true,
+        loadPrevNext: true
+      },
+      breakpoints: {
+        0: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        480: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        768: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1023: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1280: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        }
+      },
+      on: {
+        init: swiper => {
+          setTimeout(() => setHeight($(swiper.$el).find('.reviews .swiper-slide')))
+        },
+        resize: swiper => {
+          setTimeout(() => {
+            $(swiper.$el).find('.reviews .swiper-slide').height('auto')
+            setHeight($(swiper.$el).find('.reviews .swiper-slide'))
+          })
+        }
+      }
+    }
+
+    reviewsSliders.push(new Swiper('.reviews_s' + i, options))
+  })
+
+
+
 
 
   // Аккордион
