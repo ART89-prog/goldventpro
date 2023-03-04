@@ -631,13 +631,29 @@ header .cont {
 .first-section .swiper {
     overflow: visible !important;
 }
-.first-section .swiper-slide {
+/* .first-section .swiper-slide {
     position: relative;
     visibility: hidden;
     width: auto;
     transition: opacity .2s linear, visibility .2s linear;
     pointer-events: none;
     opacity: 0;
+} */
+.first-section .swiper-slide.swiper-slide-next {
+    transform: scale(0.64);  
+    background: #212121;
+    opacity: 0.14;
+    filter: blur(3.1077px);
+    border-radius: 12.8252px;
+}
+
+.first-section .swiper-slide.swiper-slide-prev {
+    transform: scale(0.64);
+    position: relative;
+    background: #212121;
+    opacity: 0.14;
+    filter: blur(8.1077px);
+    border-radius: 12.8252px;
 }
 .first-section .swiper-slide.visible {
     visibility: visible;
@@ -674,7 +690,7 @@ header .cont {
 .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 48px;
     left: auto;
-    right: calc(50% - 72px);
+    right: calc(50% - 100px);
 }
 
 
