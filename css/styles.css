@@ -105,10 +105,11 @@ input[type=number] {
     Global styles
 -------------------*/
 :root {
-    --text_color: #000;
+    --text_color: #212121;
     --font_size: 16px;
     --font_size_title: 40px;
     --font_family: 'Ubuntu';
+    --bg: #0AA7B1;    
 }
 
 
@@ -186,7 +187,6 @@ button {
     min-width: 360px;
     min-height: 100%;
 
-    background: var(--bg);
 }
 
 
@@ -313,7 +313,7 @@ header .menu .item a {
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text_color);
     position: relative;   
     transition: color .2s linear;
     text-decoration: none;
@@ -328,7 +328,7 @@ header .menu .item:last-child a {
     margin-right: 0;
 }
 header .menu .item > a:hover {
-    color: #0AA7B1;
+    color: var(--bg);
 }
 header {
     padding: 60px 0 68px;
@@ -349,7 +349,7 @@ header .cont {
     line-height: 34px;
     text-align: right;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text_color);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -387,14 +387,14 @@ header .cont {
     font-size: 12px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text_color);
     transition: all .4s;
 }
 .btn_callback:hover {
     background: #E2B848;
 }
 .btn_callback:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
     color: #FFFFFF;
 }
@@ -402,15 +402,16 @@ header .cont {
 .title {
     font-family: 'Raleway';
     font-weight: 900;
-    font-size: 40px;
+    font-size: var(--font_size_title);
     line-height: 47px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--text_color);
 }
 
 
 
+/* benefits */
 .benefits {
     margin-top: 85px;
     padding-bottom: 70px;
@@ -438,6 +439,8 @@ header .cont {
 }
 .benefits_item-icon {
     margin-bottom: 19px;
+    width: 57px;
+    height: 57px;
 }
 .benefits_item-title {
     text-align: center;
@@ -446,7 +449,7 @@ header .cont {
     line-height: 21px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--text_color);
     margin-bottom: 15px;
 }
 .benefits_item-text {
@@ -456,7 +459,7 @@ header .cont {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--text_color);
 }
 .benefits_item::before {
     position: absolute;
@@ -468,10 +471,13 @@ header .cont {
     left: 50%;
     transform: translateX(-50%);
 }
+.block {
+    scroll-margin-top: 205px;
+}
 
 
 
-
+/* first-section */
 .first-section {
     margin-top: 228px;
 }
@@ -484,7 +490,7 @@ header .cont {
 .first-section_title {
     font-family: 'Raleway';
     font-weight: 900;
-    font-size: 40px;
+    font-size: var(--font_size_title);
     line-height: 47px;
     color: #FFFFFF;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.22);
@@ -504,7 +510,7 @@ header .cont {
     font-size: 12px;
     line-height: 38px;
     text-transform: uppercase;
-    color: #212121; 
+    color: var(--text_color);
     text-decoration: none;
     text-align: center;
     margin-right: 35px;
@@ -531,7 +537,7 @@ header .cont {
     content: "";
     width: 1121px;
     height: 100px;
-    background: #212121;
+    background: var(--text_color);
     opacity: 0.14;
     filter: blur(22px);
     border-radius: 20px;
@@ -553,7 +559,7 @@ header .cont {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #0AA7B1 0%, rgba(10, 167, 177, 0) 66.49%);
+    background: linear-gradient(90deg, var(--bg) 0%, rgba(10, 167, 177, 0) 66.49%);
     border-radius: 20px;
 }
 .first-section .swiper-button-prev2 {
@@ -591,7 +597,7 @@ header .cont {
     transform: translate(-50%, -50%);
     width: 29px;
     height: 10px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .first-section .swiper-button-next2 .icon {
     position: absolute;
@@ -600,7 +606,7 @@ header .cont {
     transform: translate(-50%, -50%);
     width: 29px;
     height: 10px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .first-section .swiper-button-prev2:hover {
     background: #E2B848;
@@ -609,11 +615,11 @@ header .cont {
     background: #E2B848;
 }
 .first-section .swiper-button-prev2:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .first-section .swiper-button-next2:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .first-section .swiper-button-prev2:active .icon {
@@ -673,6 +679,7 @@ header .cont {
 
 
 
+/* object */
 .object {
     padding: 70px 0;
 }
@@ -691,6 +698,10 @@ header .cont {
     margin-left: 20px;
     margin-bottom: 40px;
 }
+.object_item-img {
+    width: 388px;
+    height: 235px;
+}
 .object_item-img img {
     width: 100%;
     height: auto;
@@ -700,14 +711,14 @@ header .cont {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color: #212121;
+    color: var(--text_color);
     margin-top: 17px;
 }
 .object_item-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
-    color: #212121;
+    color: var(--text_color);
     margin-top: 12px; 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -732,7 +743,7 @@ header .cont {
     font-weight: 700;
     font-size: 12px;
     line-height: 38px;
-    color: #212121;
+    color: var(--text_color);
     padding: 0 22px 0 20px;
     white-space: nowrap;
     margin-top: 15px;
@@ -741,14 +752,14 @@ header .cont {
 .object_item-link .icon {
     width: 12px;
     height: 6px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .object_item-link:hover {
     background: #F3CD67;
     box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
 }
 .object_item-link:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
     color: #fff;
 }
@@ -757,7 +768,7 @@ header .cont {
 }
 .object_link {
     text-decoration: none;
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 8px 14px rgba(10, 167, 177, 0.3);
     border-radius: 2px; 
     font-weight: 700;
@@ -789,6 +800,7 @@ header .cont {
 
 
 
+/* about */
 .about {
     padding: 70px 0;
 }
@@ -805,9 +817,9 @@ header .cont {
 }
 .about_text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
-    color: #212121;
+    color: var(--text_color);
 }
 .about_text p {
     margin-bottom: 25px;
@@ -818,7 +830,7 @@ header .cont {
 .about_link {
     width: 350px;
     height: 75px;
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 8px 14px rgba(10, 167, 177, 0.3);
     border-radius: 2px;
     padding: 0 28px;
@@ -845,12 +857,14 @@ header .cont {
     margin-right: -345px;
     margin-top: 30px;
     position: relative;
+    width: 859px;
+    height: 665px;
 }
 
 
 
 
-
+/* callback */
 .callback {
     background: url(../images/callback_bg.png);
     background-repeat: no-repeat;
@@ -873,7 +887,7 @@ header .cont {
     font-size: 22px;
     line-height: 25px;
     text-align: center;
-    color: #212121;
+    color: var(--text_color);
     text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
     margin-bottom: 30px;
 }
@@ -881,7 +895,7 @@ header .cont {
     padding: 22px 20px;     
     background: rgba(255, 255, 255, 0.01);
     mix-blend-mode: normal;
-    border: 1px solid #0AA7B1;
+    border: 1px solid var(--bg);
     box-shadow: 0px 14px 40px -6px rgba(0, 0, 0, 0.07);
     backdrop-filter: blur(2.5px);
     max-width: 530px;
@@ -899,7 +913,7 @@ header .cont {
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
-    color: #212121;
+    color: var(--text_color);
     margin-bottom: 8px;
 }
 .nice-select {
@@ -908,17 +922,17 @@ header .cont {
     border: solid 1px #E3E3E3;    
     border-radius: 2px;
     height: 45px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 45px;
     color: #757575;
     padding: 0 14px;
     margin-bottom: 18px;
 }
 .nice-select:after {
-    border-bottom: 2px solid #212121;
-    border-right: 2px solid #212121;
+    border-bottom: 2px solid var(--text_color);
+    border-right: 2px solid var(--text_color);
     height: 10px;
     margin-top: -7px;
     right: 22px;
@@ -956,7 +970,7 @@ header .cont {
 .nice-select .option:hover, 
 .nice-select .option.focus, 
 .nice-select .option.selected.focus {
-    color: #212121;
+    color: var(--text_color);
     background: none;
 }
 .nice-select:active, 
@@ -976,20 +990,20 @@ header .cont {
     padding: 0 44px 0 14px;
     width: 100%;
     height: 45px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
-    color: #212121;
+    color: var(--text_color);
 }
 .callback form input:focus {
-    border: 1px solid #212121;
+    border: 1px solid var(--text_color);
 }
 .callback form label {
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
-    color: #212121; 
+    color: var(--text_color);
     margin-bottom: 8px;
     display: block;
 }
@@ -1014,7 +1028,7 @@ header .cont {
     color: #AAAAAA;
 }
 .callback_politic a {
-    color: #0AA7B1;
+    color: var(--bg);
     text-decoration: none;
 }
 .callback form button {
@@ -1024,7 +1038,7 @@ header .cont {
     background: #F3CD67;
     box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
     border-radius: 2px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 12px;
     line-height: 45px;
@@ -1036,7 +1050,7 @@ header .cont {
     background: #E2B848;
 }
 .callback form button:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
     color: #FFFFFF;
 }
@@ -1047,22 +1061,24 @@ header .cont {
     padding: 9px 14px;
     width: 100%;
     height: 45px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
-    color: #212121;
+    color: var(--text_color);
     resize: none;
 }
 .callback form textarea:focus {
-    border: 1px solid #212121;
+    border: 1px solid var(--text_color);
 }
 .callback_img {
     margin-bottom: 53px;
+    width: 423px;
+    height: 722px;
 }
 
 
-
+/* license */
 .license {
     padding: 70px 0 70px;
 }
@@ -1118,7 +1134,7 @@ header .cont {
 .license_text {
     position: relative;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
     color: #757575;
     width: calc(100% - 510px);
@@ -1128,6 +1144,9 @@ header .cont {
     position: absolute;
     right: calc(-100% + 185px);
     top: -60px;
+    z-index: -1;
+    width: 434px;
+    height: 210px;
 }
 .license .swiper-button-prev {
     width: 73px;
@@ -1156,7 +1175,7 @@ header .cont {
     transform: translate(-50%, -50%);
     width: 29px;
     height: 10px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .license .swiper-button-next .icon {
     position: absolute;
@@ -1165,7 +1184,7 @@ header .cont {
     transform: translate(-50%, -50%);
     width: 29px;
     height: 10px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .license .swiper-button-prev:hover {
     background: #E2B848;
@@ -1174,11 +1193,11 @@ header .cont {
     background: #E2B848;
 }
 .license .swiper-button-prev:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .license .swiper-button-next:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .license .swiper-button-prev:active .icon {
@@ -1215,7 +1234,7 @@ header .cont {
 
 
 
-
+/* reviews */
 .reviews {
     padding: 25px 0 130px;
 }
@@ -1236,7 +1255,7 @@ header .cont {
 }
 .reviews_text span {
     font-weight: 700;
-    color: #212121;
+    color: var(--text_color);
 }
 .reviews_item {
     display: flex;
@@ -1266,7 +1285,7 @@ header .cont {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #212121;
+    color: var(--text_color);
 }
 .reviews_item-date {
     font-weight: 400;
@@ -1279,10 +1298,10 @@ header .cont {
 }
 .reviews_item-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
     text-align: center;
-    color: #212121;
+    color: var(--text_color);
     max-width: 875px;
 }
 .reviews .swiper-button-prev3 {
@@ -1304,7 +1323,7 @@ header .cont {
     font-size: 10px;
     line-height: 11px;
     text-align: right;
-    color: #212121;
+    color: var(--text_color);
     padding: 12px 16px 16px;
 }
 .reviews .swiper-button-next3 {
@@ -1326,19 +1345,19 @@ header .cont {
     font-size: 10px;
     line-height: 11px;
     text-align: left;
-    color: #212121;
+    color: var(--text_color);
     padding: 12px 16px 16px;
 }
 .reviews .swiper-button-prev3 .icon {
     margin-bottom: 3px;
     width: 29px;
     height: 10px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .reviews .swiper-button-next3 .icon {
     width: 29px;
     height: 10px;
-    fill: #212121;
+    fill: var(--text_color);
 }
 .reviews .swiper-button-prev3:hover {
     background: #E2B848;
@@ -1348,12 +1367,12 @@ header .cont {
 }
 .reviews .swiper-button-prev3:active {
     color: #fff;
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .reviews .swiper-button-next3:active {
     color: #fff;
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
 .reviews .swiper-button-prev3:active .icon {
@@ -1381,6 +1400,7 @@ header .cont {
 
 
 
+/* accordion */
 .accordion {
     padding: 140px 0;
     background-position: center;
@@ -1422,15 +1442,15 @@ header .cont {
 }
 .accordion_item-data {
     display: none;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 24px;
-    color: #0AA7B1;
+    color: var(--bg);
     padding: 14px 27px 20px;
 }
 .accordion_item.active .accordion_item-icon {
-    fill: #0AA7B1;
+    fill: var(--bg);
     transform: rotate(180deg);
 }
 .accordion_item.active .accordion_item-title {
@@ -1438,11 +1458,11 @@ header .cont {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-    color: #0AA7B1;
+    color: var(--bg);
 }
 .accordion_item.active {
     background: #E8FEFF;
-    border: 2px solid #0AA7B1;
+    border: 2px solid var(--bg);
     box-shadow: 0px 12px 18px -4px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
 }
@@ -1453,16 +1473,16 @@ header .cont {
 }
 .accordion_text {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
     text-align: center;
-    color: #212121;
+    color: var(--text_color);
     margin-top: 60px;
 }
 .accordion_link {
     width: 457px;
     height: 75px;
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 8px 14px rgba(10, 167, 177, 0.3);
     border-radius: 2px;
     padding: 0 28px;
@@ -1489,11 +1509,10 @@ header .cont {
 
 
 
-
-
+/* footer */
 footer {
     padding: 29px 0 33px;
-    background: #212121;
+    background: var(--text_color);
 }
 footer .cont {
     display: flex;
@@ -1524,7 +1543,7 @@ footer .menu .item a {
     margin-bottom: 17px;
 }
 footer .menu .item > a:hover {
-    color: #0AA7B1;
+    color: var(--bg);
 }
 .footer_contacts {
     display: flex;
@@ -1548,7 +1567,7 @@ footer .menu .item > a:hover {
     transition: all .4s;
 }
 .footer_contacts-phone:hover {
-    color: #0AA7B1;
+    color: var(--bg);
 }
 .footer_contacts-soc a:nth-child(1) {
     width: 16px;
@@ -1574,6 +1593,7 @@ position: relative;
 
 
 
+/* modal */
 .modal {    
     max-width: 490px;
     width: 100%;
@@ -1595,7 +1615,7 @@ position: relative;
     font-size: 22px;
     line-height: 25px;
     text-align: center;
-    color: #212121;
+    color: var(--text_color);
     text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
     margin-bottom: 48px;
 }
@@ -1609,20 +1629,20 @@ position: relative;
     padding: 0 44px 0 14px;
     width: 100%;
     height: 45px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 26px;
-    color: #212121;
+    color: var(--text_color);
 }
 .modal form input:focus {
-    border: 1px solid #212121;
+    border: 1px solid var(--text_color);
 }
 .modal form label {
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
-    color: #212121; 
+    color: var(--text_color);
     margin-bottom: 8px;
     display: block;
 }
@@ -1647,7 +1667,7 @@ input:-ms-input-placeholder {
     color: #AAAAAA;
 }
 .modal_politic a {
-    color: #0AA7B1;
+    color: var(--bg);
     text-decoration: none;
 }
 .modal form button {
@@ -1657,26 +1677,27 @@ input:-ms-input-placeholder {
     background: #F3CD67;
     box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
     border-radius: 2px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text_color);
     transition: all .4s;
 }
 .modal form button:hover {
     background: #E2B848;
 }
 .modal form button:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
     color: #FFFFFF;
 }
 
 
 
+/* modal2 */
 .modal2 {    
     max-width: 490px;
     width: 100%;
@@ -1691,7 +1712,7 @@ input:-ms-input-placeholder {
     line-height: 82px;
     text-align: center;
     letter-spacing: 0.02em;    
-    color: #212121;   
+    color: var(--text_color); 
     margin-top: 42px;
 }
 .modal2 .modal_text {
@@ -1702,7 +1723,7 @@ input:-ms-input-placeholder {
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #0AA7B1;
+    color: var(--bg);
     margin-bottom: 0;
 }
 .modal2 .modal_desc {
@@ -1711,7 +1732,7 @@ input:-ms-input-placeholder {
     font-size: 22px;
     line-height: 25px;
     text-align: center;
-    color: #212121;
+    color: var(--text_color);
     text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
 }
 .modal2 .modal_img {
@@ -1724,20 +1745,20 @@ input:-ms-input-placeholder {
     background: #F3CD67;
     box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
     border-radius: 2px;
-    font-family: 'Ubuntu';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text_color);
     transition: all .4s;
 }
 .modal2 form button:hover {
     background: #E2B848;
 }
 .modal2 form button:active {
-    background: #0AA7B1;
+    background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
     color: #FFFFFF;
 }
