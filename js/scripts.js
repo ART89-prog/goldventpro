@@ -205,7 +205,12 @@ $(() => {
         },
         480: {
           spaceBetween: 0,
-          slidesPerView: 1
+          slidesPerView: 1,
+          pagination: {
+            el: '.swiper-pagination3',
+            type: 'bullets',
+            clickable: true,
+          },
         },
         768: {
           spaceBetween: 0,
@@ -258,9 +263,6 @@ $(() => {
       pagination: {
         el: '.swiper-pagination4',
         type: 'fraction',
-        // formatFractionCurrent: function (number) {
-        //   return '0' + number;
-        // }
       },
       preloadImages: false,
       lazy: {

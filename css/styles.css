@@ -157,7 +157,6 @@ body {
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height: fill-available;
-    background: #E4F5F7;
 }
 
 
@@ -710,7 +709,7 @@ header .cont {
     opacity: 1;
 }
 
-.swiper-pagination-bullet {
+.first-section .swiper-pagination-bullet {
     display: block;
     width: 10px;
     height: 10px;
@@ -723,25 +722,25 @@ header .cont {
     border: 2px solid transparent;
 }
 
-.swiper-pagination-bullet:hover {
+.first-section .swiper-pagination-bullet:hover {
     border: 2px solid #FFFFFF;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
 }
 
-.swiper-pagination-bullet-active {
+.first-section .swiper-pagination-bullet-active {
     border: 2px solid #FFFFFF;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
 }
 
-.swiper-pagination-bullet+.swiper-pagination-bullet {
+.first-section .swiper-pagination-bullet+.swiper-pagination-bullet {
     margin-left: 8px !important;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom {
+.first-section .swiper-horizontal>.swiper-pagination-bullets,
+.first-section .swiper-pagination-bullets.swiper-pagination-horizontal,
+.first-section .swiper-pagination-custom {
     bottom: 48px;
     left: auto;
     right: calc(50% - 100px);
@@ -1621,6 +1620,45 @@ form input.error {
     position: relative;
     opacity: 0.64;
     filter: blur(1.1077px);
+}
+
+.reviews .swiper-pagination-bullet {
+    display: block;
+    width: 10px;
+    height: 10px;
+    transition: .2s linear;
+    pointer-events: auto;
+    opacity: 1;
+    border-radius: 50%;
+    background: #0AA7B1;
+    opacity: 0.2;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
+}
+
+.reviews .swiper-pagination-bullet:hover {
+    border: 2px solid #0AA7B1;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    opacity: 1;
+}
+
+.reviews .swiper-pagination-bullet-active {
+    border: 2px solid #0AA7B1;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    opacity: 1;
+}
+
+.reviews .swiper-pagination-bullet+.swiper-pagination-bullet {
+    margin-left: 8px !important;
+}
+
+.reviews .swiper-horizontal>.swiper-pagination-bullets,
+.reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
+.reviews .swiper-pagination-custom {
+    bottom: -40px;
+    left: auto;
+    right: auto;
 }
 
 

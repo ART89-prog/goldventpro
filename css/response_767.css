@@ -68,6 +68,11 @@
         margin-left: 0;
     }
 
+    .reviews .swiper-button-prev3,
+    .reviews .swiper-button-next3 {
+        display: none;
+    }
+
 
 
 }
