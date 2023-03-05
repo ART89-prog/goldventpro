@@ -83,6 +83,31 @@
         display: none;
     }
 
+    .projects_title {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 51px;
+    }
+    .projects_text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .projects-link-prev {
+        margin-bottom: 50px;
+    }
+    .projects {
+        padding: 50px 0 50px;
+    }
+    .projects_btn {
+        margin: 60px auto 0;
+    }
+    .projects .swiper-button-prev4 {
+        left: 30px;
+    }
+    .projects .swiper-button-next4 {
+        right: 30px;
+    }
+
 
 
 }

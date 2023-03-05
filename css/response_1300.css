@@ -47,6 +47,16 @@
         left: auto;
         right: 10px;
     }
+    .projects .swiper {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .projects .swiper-button-prev4 {
+        left: 40px;
+    }
+    .projects .swiper-button-next4 {
+        right: 40px;
+    }
 
 
 

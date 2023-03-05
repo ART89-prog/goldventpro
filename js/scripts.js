@@ -119,6 +119,7 @@ $(() => {
     el.classList.add('first_s' + i)
 
     let options = {
+      loop: true,
       speed: 500,
       watchSlidesProgress: true,
       slideActiveClass: 'active',

@@ -2142,6 +2142,9 @@ input:-ms-input-placeholder {
 }
 .projects .swiper img {
     display: block;
+    width: 100%;
+    height: 579px;
+    object-fit: cover;
 }
 .projects .swiper-pagination4 .swiper-pagination-fraction {
     color: #000;    
