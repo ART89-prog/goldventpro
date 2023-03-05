@@ -182,7 +182,79 @@
     footer .menu .item:last-child a {
         margin-right: 0;
     }
-    
+    .cont{
+        padding: 0 40px;
+    }
+    header .mob_menu_btn {
+        margin-left: 20px;
+    }
+    .header_contacts-bottom {
+        margin-top: 13px;
+    }
+    .first-section_title {
+        font-size: 32px;
+        line-height: 38px;  
+    }
+    .first-section_info {
+        padding: 61px 49px 86px;
+    }
+    .benefits {
+        margin-top: 60px;
+    }
+    .benefits_item-icon {
+        margin-bottom: 21px;
+    }
+    .benefits_item {
+        padding: 37px 31px;
+    }
+    .benefits_items {
+        margin-bottom: -49px;
+    }
+    .benefits_items > * {
+        margin-bottom: 49px;
+    }
+    .object {
+        padding: 50px 0;
+    }
+    .about_title {
+        margin-bottom: 27px;
+    }
+    .about_info {
+        margin-right: 0;
+        margin-top: -65px;
+    }
+    .reviews {
+        padding: 30px 0 70px;
+    }
+    .reviews_title {
+        margin-bottom: 25px;
+    }
+    .reviews .swiper-button-prev3 {
+        bottom: 72%;
+    }
+    .reviews .swiper-button-next3 {
+        bottom: 72%;
+    }
+    .callback {
+        background-position: center 79%;
+        padding: 73px 0 0px;
+    }
+    .license {
+        padding: 36px 0 70px;
+    }
+    .license_title {
+        margin-bottom: 29px;
+    }
+    .accordion {
+        padding: 123px 0 97px;
+    }
+    .accordion_item-head {
+        padding: 20px;
+    }
+    .accordion_item-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
    
     
 

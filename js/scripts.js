@@ -83,11 +83,11 @@ $(() => {
           }
         },
         768: {
-          spaceBetween: 20,
+          spaceBetween: 30,
           slidesPerView: 2
         },
         1023: {
-          spaceBetween: 20,
+          spaceBetween: 30,
           slidesPerView: 3
         },
         1280: {
