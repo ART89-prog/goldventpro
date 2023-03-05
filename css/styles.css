@@ -547,6 +547,11 @@ header .cont {
     text-decoration: none;
     text-align: center;
     margin-right: 35px;
+    transition: all .4s;
+}
+
+.first-section_btns a:nth-child(1):hover {
+    background: #F3CD67;
 }
 
 .first-section_btns a:nth-child(2) {
@@ -562,6 +567,10 @@ header .cont {
     color: #272727;
     text-decoration: none;
     text-align: center;
+    transition: all .4s;
+}
+.first-section_btns a:nth-child(2):hover {
+    background: #fff;
 }
 
 .first-section_wrap {

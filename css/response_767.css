@@ -31,6 +31,42 @@
     footer .btn_callback {
         margin-top: 3.9em;
     }
+    header .mob_menu_btn {
+        order: 0;
+    }
+    header .cont {
+        flex-wrap: wrap;
+    }
+    .header_contacts {
+        margin-left: auto;
+        margin-right: auto;
+        order: 1;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .header_contacts-bottom {
+        justify-content: flex-start;
+    }
+    header .btn_callback {
+        margin-left: 50px;
+    }
+    header {
+        padding: 23px 0 48px;
+    }
+    .benefits_items {
+        margin-left: 0;
+    }
+    .benefits_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .object_items {
+        margin-left: 0;
+    }
+    .object_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
 
 
 
