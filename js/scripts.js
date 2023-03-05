@@ -129,7 +129,7 @@ $(() => {
         prevEl: '.swiper-button-prev2'
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination2',
         type: 'bullets',
         clickable: true,
       },
