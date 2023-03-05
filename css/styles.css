@@ -1450,7 +1450,6 @@ form input.error {
 .license .swiper-pagination-bullets.swiper-pagination-horizontal,
 .license .swiper-pagination-custom {
     bottom: -40px;
-    left: auto;
     right: auto;
 }
 
@@ -1661,7 +1660,7 @@ form input.error {
     filter: blur(1.1077px);
 }
 
-.reviews .swiper-pagination-bullet {
+.reviews .swiper-pagination3 .swiper-pagination-bullet {
     display: block;
     width: 10px;
     height: 10px;
@@ -1674,27 +1673,27 @@ form input.error {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
 }
 
-.reviews .swiper-pagination-bullet:hover {
+.reviews .swiper-pagination3 .swiper-pagination-bullet:hover {
     border: 2px solid #0AA7B1;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
     background: #fff;
     opacity: 1;
 }
 
-.reviews .swiper-pagination-bullet-active {
+.reviews .swiper-pagination3 .swiper-pagination-bullet-active {
     border: 2px solid #0AA7B1;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
     background: #fff;
     opacity: 1;
 }
 
-.reviews .swiper-pagination-bullet+.swiper-pagination-bullet {
+.reviews .swiper-pagination3 .swiper-pagination-bullet+.swiper-pagination-bullet {
     margin-left: 8px !important;
 }
 
-.reviews .swiper-horizontal>.swiper-pagination-bullets,
-.reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
-.reviews .swiper-pagination-custom {
+.reviews .swiper-pagination3 .swiper-horizontal>.swiper-pagination-bullets,
+.reviews .swiper-pagination3 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.reviews .swiper-pagination3 .swiper-pagination-custom {
     bottom: -40px;
     left: auto;
     right: auto;
@@ -1714,6 +1713,7 @@ form input.error {
     fill: #D9D9D9;
     width: 15px;
     height: 9px;
+    margin-top: 8px;
 }
 
 .accordion_title {
@@ -1735,7 +1735,7 @@ form input.error {
 .accordion_item-head {
     padding: 19px 27px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -1746,6 +1746,7 @@ form input.error {
     font-size: 20px;
     line-height: 23px;
     color: #7B7B7B;
+    width: calc(100% - 45px);
 }
 
 .accordion_item-data {

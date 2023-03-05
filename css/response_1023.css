@@ -249,11 +249,14 @@
         padding: 123px 0 97px;
     }
     .accordion_item-head {
-        padding: 20px;
+        padding: 20px 35px 20px 20px;
     }
     .accordion_item-title {
         font-size: 18px;
         line-height: 20px;
+    }
+    .menu_open .header_contacts {
+        margin-top: 0;
     }
    
     

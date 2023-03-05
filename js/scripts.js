@@ -71,11 +71,11 @@ $(() => {
       breakpoints: {
         0: {
           spaceBetween: 20,
-          slidesPerView: 2
+          slidesPerView: 1
         },
         480: {
           spaceBetween: 20,
-          slidesPerView: 2,
+          slidesPerView: 1,
           pagination: {
             el: '.swiper-pagination',
             type: 'bullets',

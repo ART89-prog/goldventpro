@@ -17,9 +17,9 @@
         object-fit: cover;
         border-radius: 20px;
     }
-    .swiper-horizontal > .swiper-pagination-bullets, 
-    .swiper-pagination-bullets.swiper-pagination-horizontal, 
-    .swiper-pagination-custom, .swiper-pagination-fraction {
+    .first-section .swiper-horizontal > .swiper-pagination-bullets, 
+    .first-section .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .first-section .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 30px;
     }
     .about_info {

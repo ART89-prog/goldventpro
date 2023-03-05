@@ -2,7 +2,7 @@
 
     :root {
         --font_size: 16px;
-        --font_size_title: 40px;
+        --font_size_title: 28px;
     }
 
     footer .menu {
@@ -106,6 +106,95 @@
     }
     .projects .swiper-button-next4 {
         right: 30px;
+    }
+    .cont {
+        padding: 0 30px;
+    }
+    .first-section .cont {
+        padding: 0 30px;
+    }
+    .first-section .swiper-button-prev2,
+    .first-section .swiper-button-next2 {
+        display: none;
+    }
+    .first-section {
+        margin-top: 287px;
+    }
+    .first-section_title {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .first-section_info {
+        padding: 28px 10px 72px;
+    }
+    .first-section_btns {
+        flex-direction: column;
+    }
+    .first-section_btns a:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+    .first-section .swiper-horizontal>.swiper-pagination-bullets, 
+    .first-section .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .first-section .swiper-pagination-custom {
+        bottom: 29px;
+        left: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .about_info {
+        margin-bottom: -20px;
+    }
+    .callback {
+        background: none;
+    }
+    .callback_form {
+        padding: 0;
+        max-width: 100%;
+        border: none;
+    }
+    .callback_form form {
+        padding: 60px 0px 48px;
+        position: relative;
+    }
+    .callback_form form::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #0AA7B1;
+        width: calc(100% + 60px);
+        height: 1px;
+    }
+    .callback_form form::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #0AA7B1;
+        width: calc(100% + 60px);
+        height: 1px;
+    }
+    .callback form button {
+        width: 100%;
+    }
+    .callback_text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 40px;
+    }
+    .title {
+        line-height: 33px;
+    }
+    .license_title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .license_text {
+        text-align: center;
     }
 
 

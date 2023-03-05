@@ -1,9 +1,5 @@
 @media (max-width: 479px) {
 
-    :root {
-        --font_size: 14px;
-        --font_size_title: 30px;
-    }
 
     header .mob_menu_btn {
         width: 63px;
@@ -12,6 +8,10 @@
     header .mob_menu_btn img {
         width: 100%;
         height: 100%;
+    }
+    .license_text img {
+        width: 100%;
+        height: auto;
     }
   
 
