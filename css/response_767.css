@@ -378,7 +378,18 @@
         line-height: 21px;
         margin-bottom: 41px;
     }
-    
+
+    header .menu {
+        padding: 185px 20px 20px;
+    }
+    .menu_open header .close_btn {
+        top: -80px;
+    }
+    .menu_open header .close_btn img {
+        width: 28px;
+        height: 28px;
+    }
+ 
 
 
 
