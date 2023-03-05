@@ -1811,7 +1811,9 @@ form input.error {
     color: #FFFFFF;
     margin: 18px auto 0;
 }
-
+.accordion_link .icon-mob {
+    display: none;
+}
 .accordion_link span {
     display: block;
     margin-left: 40px;

@@ -57,6 +57,9 @@
     .projects .swiper-button-next4 {
         right: 40px;
     }
+    .reviews_text br {
+        display: none;
+    }
 
 
 
