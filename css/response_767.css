@@ -72,6 +72,16 @@
     .reviews .swiper-button-next3 {
         display: none;
     }
+    .license_text img {
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .license .swiper-button-prev,
+    .license .swiper-button-next {
+        display: none;
+    }
 
 
 
