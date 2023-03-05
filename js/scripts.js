@@ -75,7 +75,12 @@ $(() => {
         },
         480: {
           spaceBetween: 20,
-          slidesPerView: 2
+          slidesPerView: 2,
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+          }
         },
         768: {
           spaceBetween: 20,
