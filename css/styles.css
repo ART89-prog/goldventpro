@@ -361,8 +361,11 @@ header .cont {
     color: var(--text_color);
     text-decoration: none;
     white-space: nowrap;
+    transition: all .4s;
 }
-
+.header_contacts-phone:hover {
+    color: var(--bg);
+}
 .header_contacts-bottom {
     display: flex;
     align-items: center;
@@ -666,11 +669,9 @@ header .cont {
     background: var(--bg);
     box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
 }
-
 .first-section .swiper-button-prev2:active .icon {
     fill: #fff;
 }
-
 .first-section .swiper-button-next2:active .icon {
     fill: #fff;
 }
@@ -1242,7 +1243,6 @@ form input.error {
 .license {
     padding: 70px 0 70px;
 }
-
 .license_title {
     text-align: start;
     margin-bottom: 34px;
@@ -2051,13 +2051,16 @@ input:-ms-input-placeholder {
 
 
 /* projects */
+.projects {
+    padding: 74px 0 119px;
+}
 .projects .swiper img {
     display: block;
 }
-.swiper-pagination4 .swiper-pagination-fraction {
+.projects .swiper-pagination4 .swiper-pagination-fraction {
     color: #000;    
 }
-.swiper-pagination4.swiper-pagination-fraction {
+.projects .swiper-pagination4.swiper-pagination-fraction {
     bottom: 0px;
     color: #68CED4;
     z-index: 9000;
@@ -2068,7 +2071,7 @@ input:-ms-input-placeholder {
     display: flex;
     align-items: end;
 }
-.swiper-pagination-current {
+.projects .swiper-pagination-current {
     display: block;
     font-weight: 700;
     font-size: 28px;
@@ -2077,7 +2080,7 @@ input:-ms-input-placeholder {
     z-index: 9000;
     margin-right: 6px;
 }
-.swiper-pagination-total {
+.projects .swiper-pagination-total {
     display: block;
     color: #68CED4;
     z-index: 9000;
@@ -2085,4 +2088,147 @@ input:-ms-input-placeholder {
     font-size: 18px;
     line-height: 16px;
     margin-left: 4px;
+}
+.projects .swiper-button-prev4 {
+    width: 57px;
+    height: 44px;
+    background: #F3CD67;
+    box-shadow: 0px 5px 15px rgba(243, 205, 103, 0.2);
+    border-radius: 2px;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: -30px;
+    transition: all .4s;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+}
+.projects .swiper-button-next4 {
+    width: 57px;
+    height: 44px;
+    background: #F3CD67;
+    box-shadow: 0px 5px 15px rgba(243, 205, 103, 0.2);
+    border-radius: 2px;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: -25px;
+    transition: all .4s;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+}
+.projects .swiper-button-prev4 .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29px;
+    height: 10px;
+    fill: var(--text_color);
+}
+.projects .swiper-button-next4 .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29px;
+    height: 10px;
+    fill: var(--text_color);
+}
+.projects .swiper-button-prev4:hover {
+    background: #E2B848;
+}
+.projects .swiper-button-next4:hover {
+    background: #E2B848;
+}
+.projects .swiper-button-prev4:active {
+    background: var(--bg);
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+}
+.projects .swiper-button-next4:active {
+    background: var(--bg);
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+}
+.projects .swiper-button-prev4:active .icon {
+    fill: #fff;
+}
+.projects .swiper-button-next4:active .icon {
+    fill: #fff;
+}
+.projects .swiper {
+    overflow: visible !important;
+}
+
+.projects .swiper-slide {
+    position: relative;
+    visibility: hidden;
+    width: auto;
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.projects .swiper-slide.visible {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.projects_title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #212121; 
+    margin-top: 49px;
+}
+.projects_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #212121;
+    margin-top: 17px;
+}
+.projects_btn {
+    margin: 74px auto 0;
+    width: 270px;
+    height: 66px;
+    background: #F3CD67;
+    box-shadow: 0px 7px 15px rgba(243, 205, 103, 0.4);
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+    display: block;
+    transition: all .4s;
+}
+.projects_btn:hover {
+    background: #E2B848;
+}
+
+.projects_btn:active {
+    background: var(--bg);
+    box-shadow: 0px 5px 15px rgba(10, 167, 177, 0.4);
+    color: #FFFFFF;
+}
+.projects-link-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 78px;
+}
+.projects-link-prev span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #0AA7B1;
+    display: block;
+    margin-left: 11px;
+    text-decoration: underline;
 }
