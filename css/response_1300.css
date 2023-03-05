@@ -45,6 +45,7 @@
     }
     .license .swiper-button-next {
         left: auto;
+        right: 10px;
     }
 
 

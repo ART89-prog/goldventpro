@@ -238,6 +238,75 @@ $(() => {
 
 
 
+
+  const projectsSliders = [],
+    projects = document.querySelectorAll('.projects .swiper')
+
+  projects.forEach(function (el, i) {
+    el.classList.add('projects_s' + i)
+
+    let options = {
+      loop: true,
+      speed: 500,
+      watchSlidesProgress: true,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      navigation: {
+        nextEl: '.swiper-button-next4',
+        prevEl: '.swiper-button-prev4'
+      },
+      pagination: {
+        el: '.swiper-pagination4',
+        type: 'fraction',
+        // formatFractionCurrent: function (number) {
+        //   return '0' + number;
+        // }
+      },
+      preloadImages: false,
+      lazy: {
+        enabled: true,
+        checkInView: true,
+        loadOnTransitionStart: true,
+        loadPrevNext: true
+      },
+      breakpoints: {
+        0: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        480: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        768: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        },
+        1023: {
+          spaceBetween: 00,
+          slidesPerView: 1
+        },
+        1280: {
+          spaceBetween: 0,
+          slidesPerView: 1
+        }
+      },
+      on: {
+        init: swiper => {
+          setTimeout(() => setHeight($(swiper.$el).find('projects .swiper-slide')))
+        },
+        resize: swiper => {
+          setTimeout(() => {
+            $(swiper.$el).find('.projects .swiper-slide').height('auto')
+            setHeight($(swiper.$el).find('.projects .swiper-slide'))
+          })
+        }
+      }
+    }
+
+    projectsSliders.push(new Swiper('.projects_s' + i, options))
+  })
+
   // Показать контент
   $(".hide-content").hide();
   $(".object_link").click(function (e) {
