@@ -156,10 +156,12 @@
         padding: 0;
         max-width: 100%;
         border: none;
+        background: #fff;
     }
     .callback_form form {
         padding: 60px 0px 48px;
         position: relative;
+        background: #fff;
     }
     .callback_form form::after {
         position: absolute;
